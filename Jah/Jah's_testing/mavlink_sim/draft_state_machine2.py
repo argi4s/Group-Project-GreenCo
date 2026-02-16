@@ -1,143 +1,62 @@
 from pymavlink import mavutil
 import time
-from enum import Enum
 
-# ------------------------
-# FSM States
-# ------------------------
-class State(Enum):
-    INIT = 0
-    IDLE = 1
-    ARMED = 2
-    TAKEOFF = 3
-    MISSION = 4
-    LOITER = 5
-    RTL = 6
-    FAILSAFE = 7
+mav = mavutil.mavlink_connection("tcp:127.0.0.1:14550") # check comunication protocol and port
+mav.wait_heartbeat()
 
-# ------------------------
-# MAVLink connection
-# ------------------------
-master = mavutil.mavlink_connection("tcp:127.0.0.1:14550")
-master.wait_heartbeat()
-print("Connected to vehicle")
+print("Connected to FC")    # check
 
-# ------------------------
-# Helpers
-# ------------------------
 def set_mode(mode):
-    mapping = master.mode_mapping()
-    if mode not in mapping:
-        print(f"Mode {mode} not supported")
-        return False
+    mav.set_mode_apm(mode)
+    print(f"[CMD] Mode set to {mode}")
 
-    master.mav.set_mode_send(
-        master.target_system,
-        mavutil.mavlink.MAV_MODE_FLAG_CUSTOM_MODE_ENABLED,
-        mapping[mode]
+def arm():          # arming function, use arm in cmd to call it
+    mav.mav.command_long_send(
+        mav.target_system,
+        mav.target_component,
+        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,
+        0,
+        1, 0, 0, 0, 0, 0, 0
     )
-    print(f"Mode → {mode}")
-    return True
+    print("[CMD] Arm")
 
+def send_velocity(vx, vy, vz):  # velocity function, type x,y,z coords for the drone to follow
+    mav.mav.set_position_target_local_ned_send(
+        0,
+        mav.target_system,
+        mav.target_component,
+        mavutil.mavlink.MAV_FRAME_LOCAL_NED,
+        0b0000111111000111, #ignore everything except Velocity (Mask)
+        0, 0, 0,
+        vx, vy, vz,
+        0, 0, 0,
+        0, 0
+    )
+    print(f"[CMD] Velocity {vx} {vy} {vz}")
 
-def is_armed():
-    return master.motors_armed()
-
-
-def get_altitude():
-    msg = master.recv_match(type='GLOBAL_POSITION_INT', blocking=False)
-    if msg:
-        return msg.relative_alt / 1000.0
-    return None
-
-
-def read_operator_command():
-    msg = master.recv_match(type='STATUSTEXT', blocking=False)
-    if msg:
-        return msg.text.decode('utf-8').strip().upper()
-    return None
-
-# ------------------------
-# FSM variables
-# ------------------------
-state = State.INIT
-last_heartbeat = time.time()
-
-# ------------------------
-# FSM Loop
-# ------------------------
 while True:
+    cmd = input("> ").strip().lower()
 
-    # --- Heartbeat monitoring ---
-    hb = master.recv_match(type='HEARTBEAT', blocking=False)
-    if hb:
-        last_heartbeat = time.time()
-
-    if time.time() - last_heartbeat > 3:
-        state = State.FAILSAFE
-
-    alt = get_altitude()
-    cmd = read_operator_command()
-
-    # ------------------------
-    # Operator Commands (global)
-    # ------------------------
-    if cmd:
-        print(f"Operator → {cmd}")
-
-        if cmd == "HOLD":
-            set_mode("LOITER")
-            state = State.LOITER
-
-        elif cmd == "RESUME" and state == State.LOITER:
-            set_mode("AUTO")
-            state = State.MISSION
-
-        elif cmd == "RTL":
-            state = State.RTL
-
-        elif cmd == "ABORT":
-            state = State.FAILSAFE
-
-    # ------------------------
-    # FSM Logic
-    # ------------------------
-    if state == State.INIT:
-        print("FSM → IDLE")
-        state = State.IDLE
-
-    elif state == State.IDLE:
-        if is_armed():
-            print("FSM → ARMED")
-            state = State.ARMED
-
-    elif state == State.ARMED:
-        if alt and alt > 1.0:
-            print("FSM → TAKEOFF")
-            state = State.TAKEOFF
-
-    elif state == State.TAKEOFF:
-        if alt and alt > 10.0:
-            print("FSM → MISSION")
-            set_mode("AUTO")
-            state = State.MISSION
-
-    elif state == State.MISSION:
-        # Normal autonomous flight
-        pass
-
-    elif state == State.LOITER:
-        # Hold position, wait for RESUME / RTL
-        pass
-
-    elif state == State.RTL:
-        print("FSM → RTL")
-        set_mode("RTL")
+    if cmd == "exit":
         break
 
-    elif state == State.FAILSAFE:
-        print("FAILSAFE → RTL")
-        set_mode("RTL")
-        break
+    elif cmd.startswith("mode"):
+        _, mode = cmd.split()
+        set_mode(mode.upper())
 
-    time.sleep(0.2)
+    elif cmd == "arm":
+        arm()
+
+    elif cmd.startswith("vel"):
+        _, vx, vy, vz = cmd.split()
+        send_velocity(float(vx), float(vy), float(vz))
+
+    elif cmd == "stop":
+        send_velocity(0, 0, 0)
+
+    elif cmd == "status":
+        hb = mav.recv_match(type="HEARTBEAT", blocking=True)
+        print("Mode:", mavutil.mode_string_v10(hb))
+
+    else:
+        print("Unknown command")
