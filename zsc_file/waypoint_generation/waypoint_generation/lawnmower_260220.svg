@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 256.50 188.17">
+
+<style>
+  .area { fill: rgba(30,144,255,0.12); stroke: #1e90ff; stroke-width: 2; }
+  .path { fill: none; stroke: #ff7f0e; stroke-width: 2; }
+  .ptS  { fill: #2ca02c; }
+  .ptE  { fill: #d62728; }
+  .txt  { font-family: ui-sans-serif, system-ui; font-size: 16px; fill: #333; }
+</style>
+
+<polyline class="area" points="20.00,88.13 105.45,168.17 196.31,20.00 236.50,101.15 20.00,88.13" />
+<polyline class="path" points="81.47,144.53 127.22,131.37 234.00,100.67 235.02,100.37 222.75,73.37 150.92,94.03 145.23,95.66 55.57,121.44 31.59,97.81 56.46,90.66 174.61,56.68 208.55,46.92" />
+<circle class="ptS" cx="81.47" cy="144.53" r="5" />
+<circle class="ptE" cx="208.55" cy="46.92" r="5" />
+<text class="txt" x="10" y="24">Local XY (m): Flight Area + LawnMower Path (Start=green, End=red)</text>
+</svg>
