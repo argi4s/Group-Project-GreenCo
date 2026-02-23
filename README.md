@@ -1,4 +1,4 @@
 # Group-Project-GreenCo
 
 
-This is the readme file test
+After reading the Requirement 12, the repository has been changed to public.
