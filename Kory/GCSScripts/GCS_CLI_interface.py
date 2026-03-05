@@ -49,14 +49,35 @@ def print_above_input(msg):
         sys.stdout.flush()
 
 def status_listener():
+    seq_received = set()
     while not shutdown_event.is_set():
         try:
-            data, _ = sock.recvfrom(1024)
-            print_above_input(f"[FSM] {data.decode().strip()}")
+            data, addr = sock.recvfrom(1024)
+            text = data.decode().strip()
+
+            # Parse sequence and type
+            if text.startswith("SEQ="):
+                parts = text.split(" ", 2)
+                seq = int(parts[0].split("=")[1])
+                msg_type = parts[1].split("=")[1]
+                content = parts[2].split("=", 1)[1]
+
+                # Send ACK
+                ack = f"ACK SEQ={seq} TYPE={msg_type}"
+                sock.sendto(ack.encode(), addr)
+
+                # Only process once
+                if seq in seq_received:
+                    continue
+                seq_received.add(seq)
+
+                print_above_input(f"[{msg_type}] {content}")
+            else:
+                # fallback: just print unknown messages
+                print_above_input(f"[UNKNOWN] {text}")
+
         except socket.timeout:
             continue
-        except OSError:
-            break
 
 def cli_loop():
     print("=== FSM GCS Command Sender (UDP) ===")

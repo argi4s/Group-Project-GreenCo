@@ -38,7 +38,7 @@ aoi_approved = False
 # FSM Transition Table
 # -------------------------
 TRANSITIONS = {
-    STATE_INIT: {"start_search": STATE_FIND_AOI},
+    STATE_INIT: {"start_mission": STATE_FIND_AOI},
     STATE_SEARCH: {"detect": STATE_DETECTION, "specific_search": STATE_SPECIFIC_SEARCH},
     STATE_SPECIFIC_SEARCH: {"detect": STATE_DETECTION},
     STATE_DETECTION: {"approve_approach": STATE_APPROACH},
@@ -109,9 +109,29 @@ listener_thread.start()
 # -------------------------
 # FSM Helpers
 # -------------------------
+
+seq_counter = 0
+ACK_TIMEOUT = 0.5  # seconds
+MAX_RETRIES = 5
+
 def send_status(msg):
-    """Send FSM status to GCS over UDP"""
-    udp_sock.sendto(msg.encode(), GCS_ADDR)
+    global seq_counter
+    seq_counter += 1
+    seq = seq_counter
+
+    payload = f"SEQ={seq} TYPE=STATUS MSG={msg}"
+    for attempt in range(MAX_RETRIES):
+        udp_sock.sendto(payload.encode(), GCS_ADDR)
+        try:
+            udp_sock.settimeout(ACK_TIMEOUT)
+            data, addr = udp_sock.recvfrom(1024)
+            ack_text = data.decode().strip()
+            if ack_text == f"ACK SEQ={seq} TYPE=STATUS":
+                return True  # delivered
+        except socket.timeout:
+            continue
+    print(f"[WARNING] Status message not acknowledged: {msg}")
+    return False
 
 def on_event(state, event, param=None):
     global payload_step, detection_param, return_approved
