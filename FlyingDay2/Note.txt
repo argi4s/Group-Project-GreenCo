@@ -1,0 +1,21 @@
+PORTS
+
+PI STATE MACHINE   <-> MAVPROXY           : 14401
+PI STATE MACHINE    -> GCS                : 9050
+GCS (PC)            -> PI STATE MACHINE   : 9051
+VIDEOFEED (PI)     <-> GCS                : 5800
+Vector output (PI) <-> GCS                : 5801
+GCS (PC)           <-> MAVPROXY           : 14402
+MISSPLAN (PC)      <-> MAVPROXY           : 14450*
+MISSPLAN (PC)      <-> MAVPROXY           : 14400
+
+*Not actually used.
+
+IP ADDRESSES ANVLAN
+
+PI                    192.168.1.69
+PC                    192.168.1.17
+
+MAVPROXY COMMAND
+
+python3 -m MAVProxy.mavproxy --master=/dev/ttyAMA0,115200 --out=udp:192.168.1.17:14400 --out=udp:192.168.1.17:14402 --out=udp:192.168.1.69:14401 --logfile=/home/flightlab-user/Desktop/flightday2/flight.tlog --mav20
