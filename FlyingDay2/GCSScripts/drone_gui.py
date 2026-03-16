@@ -4,6 +4,8 @@
 
 import tkinter as tk
 from tkinter import ttk, scrolledtext
+import tkinter.filedialog as filedialog
+import csv
 import threading
 import cv2
 from PIL import Image, ImageTk
@@ -64,96 +66,105 @@ class DroneGUI:
         # Add status bar at bottom
         self.create_status_bar()
         
+
     def create_control_panel(self):
         """Left panel - Controls and command buttons"""
         frame = ttk.LabelFrame(self.root, text="Drone Controls", padding=10)
         frame.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
-        
+    
         # Connection status
         ttk.Label(frame, text="Connection Status:", font=("Arial", 10, "bold")).grid(row=0, column=0, sticky="w", pady=5)
         self.pi_status_var = tk.StringVar(value="DISCONNECTED")
         self.pi_status_label = ttk.Label(frame, textvariable=self.pi_status_var, foreground="red")
         self.pi_status_label.grid(row=0, column=1, sticky="w", pady=5)
-        
+    
         # MAVLink status
         ttk.Label(frame, text="MAVLink Status:", font=("Arial", 10, "bold")).grid(row=1, column=0, sticky="w", pady=5)
         self.mav_status_var = tk.StringVar(value="STALE")
         self.mav_status_label = ttk.Label(frame, textvariable=self.mav_status_var, foreground="red")
         self.mav_status_label.grid(row=1, column=1, sticky="w", pady=5)
-        
+    
         # Current FSM State
         ttk.Label(frame, text="FSM State:", font=("Arial", 10, "bold")).grid(row=2, column=0, sticky="w", pady=5)
         self.fsm_state_var = tk.StringVar(value="--")
         ttk.Label(frame, textvariable=self.fsm_state_var, font=("Arial", 12, "bold")).grid(row=2, column=1, sticky="w", pady=5)
-        
+    
         # Separator
         ttk.Separator(frame, orient='horizontal').grid(row=3, column=0, columnspan=2, sticky="ew", pady=10)
-        
+    
         # Command buttons
         ttk.Label(frame, text="Commands:", font=("Arial", 10, "bold")).grid(row=4, column=0, columnspan=2, pady=5)
-        
+    
         # Button rows
         row = 5
         btn_frame1 = ttk.Frame(frame)
         btn_frame1.grid(row=row, column=0, columnspan=2, pady=2)
-        
+    
         ttk.Button(btn_frame1, text="INIT", command=lambda: self.send_cmd("init"), width=10).pack(side="left", padx=2)
         ttk.Button(btn_frame1, text="TAKEOFF", command=self.takeoff_dialog, width=10).pack(side="left", padx=2)
         ttk.Button(btn_frame1, text="LAND", command=lambda: self.send_cmd("land"), width=10).pack(side="left", padx=2)
-        
+    
         row += 1
         btn_frame2 = ttk.Frame(frame)
         btn_frame2.grid(row=row, column=0, columnspan=2, pady=2)
-        
+    
         ttk.Button(btn_frame2, text="RTL", command=lambda: self.send_cmd("rtl"), width=10).pack(side="left", padx=2)
         ttk.Button(btn_frame2, text="LAWN", command=lambda: self.send_cmd("lawn"), width=10).pack(side="left", padx=2)
         ttk.Button(btn_frame2, text="AOI", command=lambda: self.send_cmd("aoi"), width=10).pack(side="left", padx=2)      
         ttk.Button(btn_frame2, text="RETURN", command=lambda: self.send_cmd("return"), width=10).pack(side="left", padx=2) 
-        
-        ttk.Button(btn_frame2, text="RESTART", command=lambda: self.send_cmd("restart"), width=10).pack(side="left", padx=2)
-        
+    
         row += 1
         btn_frame3 = ttk.Frame(frame)
         btn_frame3.grid(row=row, column=0, columnspan=2, pady=2)
-        
+    
+        ttk.Button(btn_frame3, text="RESTART", command=lambda: self.send_cmd("restart"), width=10).pack(side="left", padx=2)
         ttk.Button(btn_frame3, text="EMERGENCY", command=lambda: self.send_cmd("emergency"), width=10).pack(side="left", padx=2)
-        
+    
+        # PLB Section
+        row += 1
+        plb_frame = ttk.LabelFrame(frame, text="PLB (Person Locator Beacon)", padding=5)
+        plb_frame.grid(row=row, column=0, columnspan=2, sticky="ew", pady=5)
+
+        # File selection row
+        file_row = ttk.Frame(plb_frame)
+        file_row.pack(fill="x", pady=2)
+
+        self.plb_file_label = ttk.Label(file_row, text="No file selected", width=30)
+        self.plb_file_label.pack(side="left", padx=2)
+
+        ttk.Button(file_row, text="Browse CSV", command=self.browse_plb_file, width=12).pack(side="left", padx=2)
+
+        # Waypoint count and actions row
+        action_row = ttk.Frame(plb_frame)
+        action_row.pack(fill="x", pady=2)
+
+        self.plb_count_var = tk.StringVar(value="0 waypoints")
+        ttk.Label(action_row, textvariable=self.plb_count_var).pack(side="left", padx=5)
+
+        ttk.Button(action_row, text=" Upload to Pi", command=self.upload_plb_waypoints, width=15).pack(side="left", padx=2)
+        ttk.Button(action_row, text="▶ Start PLB", command=self.start_plb_mission, width=12).pack(side="left", padx=2)
+        ttk.Button(action_row, text="Preview", command=self.preview_plb_waypoints, width=8).pack(side="left", padx=2)
+    
         # Speed Control
         row += 1
         speed_frame = ttk.LabelFrame(frame, text="Speed Control", padding=5)
         speed_frame.grid(row=row, column=0, columnspan=2, sticky="ew", pady=5)
-        
+    
         ttk.Label(speed_frame, text="Speed (m/s):").grid(row=0, column=0, padx=2, pady=2)
         self.speed_entry = ttk.Entry(speed_frame, width=10)
         self.speed_entry.grid(row=0, column=1, padx=2, pady=2)
         self.speed_entry.insert(0, "5.0")
-        
+    
         ttk.Button(speed_frame, text="Set Speed", command=self.set_speed, width=10).grid(row=0, column=2, padx=2, pady=2)
-        
-        # Heading Control
-        row += 1
-        heading_frame = ttk.LabelFrame(frame, text="Heading Control", padding=5)
-        heading_frame.grid(row=row, column=0, columnspan=2, sticky="ew", pady=5)
-        
-        ttk.Label(heading_frame, text="Heading (°):").grid(row=0, column=0, padx=2, pady=2)
-        self.heading_entry = ttk.Entry(heading_frame, width=10)
-        self.heading_entry.grid(row=0, column=1, padx=2, pady=2)
-        self.heading_entry.insert(0, "0")
-        
-        ttk.Button(heading_frame, text="Set Heading", command=self.set_heading, width=10).grid(row=0, column=2, padx=2, pady=2)
-        
-        # Default heading button (auto-rotate)
-        ttk.Button(heading_frame, text="Default (Auto Rotate)", 
-                  command=self.set_default_heading, width=20).grid(row=1, column=0, columnspan=3, pady=2)
-        
-        ttk.Label(heading_frame, text="(0=N, 90=E, -1 = auto rotate)", font=("Arial", 8)).grid(row=2, column=0, columnspan=3)
-        
+    
         # Command log
         row += 1
         ttk.Label(frame, text="Command Log:", font=("Arial", 10, "bold")).grid(row=row, column=0, columnspan=2, pady=5)
-        
+    
         self.log_text = scrolledtext.ScrolledText(frame, height=8, width=35)
         self.log_text.grid(row=row+1, column=0, columnspan=2, pady=5)
+
+
         
     def create_telemetry_panel(self):
         """Center panel - Telemetry data"""
@@ -271,6 +282,128 @@ class DroneGUI:
         # Timestamp
         self.ack_time_var = tk.StringVar(value="")
         ttk.Label(status_frame, textvariable=self.ack_time_var, font=("Arial", 8), foreground="gray").pack(side="right", padx=5)
+        
+    def browse_plb_file(self):
+        """Open file browser to select CSV file"""
+        filename = filedialog.askopenfilename(
+            title="Select PLB Coordinates CSV",
+            filetypes=[("CSV files", "*.csv"), ("Text files", "*.txt"), ("All files", "*.*")]
+        )
+    
+        if filename:
+            self.plb_filepath = filename
+            self.plb_file_label.config(text=filename.split('/')[-1])  # Show just filename
+            self.load_plb_waypoints(filename)
+
+    def load_plb_waypoints(self, filename):
+        """Load waypoints from CSV file"""
+        self.plb_waypoints = []
+    
+        try:
+            with open(filename, 'r') as f:
+                # Try different CSV formats
+                content = f.read().strip()
+            
+                # Check if it's a simple list format: [(lon,lat),(lon,lat)]
+                if content.startswith('[') and ')' in content:
+                    import ast
+                    try:
+                        # Parse Python list of tuples
+                        waypoints = ast.literal_eval(content)
+                        for wp in waypoints:
+                            if len(wp) == 2:
+                                lon, lat = float(wp[0]), float(wp[1])
+                                self.plb_waypoints.append((lon, lat))
+                    except:
+                        pass
+            
+                # Try standard CSV
+                if not self.plb_waypoints:
+                    f.seek(0)
+                    reader = csv.reader(f)
+                    for row in reader:
+                        if len(row) >= 2:
+                            try:
+                                lon = float(row[0].strip())
+                                lat = float(row[1].strip())
+                                self.plb_waypoints.append((lon, lat))
+                            except ValueError:
+                                continue
+            
+                # Update count
+                count = len(self.plb_waypoints)
+                self.plb_count_var.set(f"{count} waypoints loaded")
+            
+                if count > 0:
+                    self.log_message(f"✅ Loaded {count} PLB waypoints from {filename}")
+                    # Show preview of first few
+                    preview = ", ".join([f"({wp[0]:.6f},{wp[1]:.6f})" for wp in self.plb_waypoints[:3]])
+                    if count > 3:
+                        preview += f" and {count-3} more"
+                    self.log_message(f"📍 Preview: {preview}")
+                else:
+                    self.log_message(f"❌ No valid waypoints found in {filename}")
+                
+        except Exception as e:
+            self.log_message(f"❌ Error loading PLB file: {e}")
+            self.plb_waypoints = []
+            self.plb_count_var.set("0 waypoints")
+
+    def upload_plb_waypoints(self):
+        """Upload PLB waypoints to Pi"""
+        if not hasattr(self, 'plb_waypoints') or not self.plb_waypoints:
+            self.log_message(" No PLB waypoints loaded")
+            return
+    
+        # Convert waypoints to string format for sending
+        # Format: "lon1,lat1,lon2,lat2,lon3,lat3,..."
+        coord_str = ",".join([f"{wp[0]},{wp[1]}" for wp in self.plb_waypoints])
+    
+        # Send to Pi
+        self.send_cmd("plb_upload", coord_str)
+        self.log_message(f" Uploaded {len(self.plb_waypoints)} PLB waypoints to Pi")
+
+    def start_plb_mission(self):
+        """Start the PLB mission"""
+        self.send_cmd("plb_start")
+        self.log_message("▶ PLB mission started")
+
+    def preview_plb_waypoints(self):
+        """Show preview of loaded waypoints in a new window"""
+        if not hasattr(self, 'plb_waypoints') or not self.plb_waypoints:
+            self.log_message(" No PLB waypoints to preview")
+            return
+    
+        # Create preview window
+        preview = tk.Toplevel(self.root)
+        preview.title("PLB Waypoints Preview")
+        preview.geometry("600x400")
+    
+        # Add text area with scrollbar
+        text_frame = ttk.Frame(preview)
+        text_frame.pack(fill="both", expand=True, padx=10, pady=10)
+    
+        text_widget = tk.Text(text_frame, wrap=tk.WORD, font=("Courier", 10))
+        scrollbar = ttk.Scrollbar(text_frame, orient="vertical", command=text_widget.yview)
+        text_widget.configure(yscrollcommand=scrollbar.set)
+    
+        scrollbar.pack(side="right", fill="y")
+        text_widget.pack(side="left", fill="both", expand=True)
+    
+        # Add header
+        text_widget.insert(tk.END, f"PLB Waypoints ({len(self.plb_waypoints)} total)\n")
+        text_widget.insert(tk.END, "="*50 + "\n")
+        text_widget.insert(tk.END, "Index\tLongitude\t\tLatitude\n")
+        text_widget.insert(tk.END, "-"*50 + "\n")
+    
+        # Add waypoints
+        for i, (lon, lat) in enumerate(self.plb_waypoints):
+            text_widget.insert(tk.END, f"{i+1}\t{lon:.7f}\t{lat:.7f}\n")
+    
+        text_widget.config(state="disabled")
+    
+        # Add close button
+        ttk.Button(preview, text="Close", command=preview.destroy).pack(pady=5)
         
     def start_video(self):
         """Start receiving video stream"""

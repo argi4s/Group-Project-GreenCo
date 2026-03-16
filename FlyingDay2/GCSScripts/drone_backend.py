@@ -30,7 +30,7 @@ class DroneBackend:
         self.LOCAL_IP = get_local_ip()
     
         # Pi addresses (destination for sending)
-        self.PI_FSM_ADDR = ("192.168.1.69", 9050)      # Pi's FSM listener
+        self.PI_FSM_ADDR = ("192.168.1.17", 9050)      # Pi's FSM listener
         self.PI_VEC_ADDR = ("192.168.0.249", 5801)      # Pi's vector detection listener
     
         # GCS listening ports (where we receive)
@@ -49,7 +49,8 @@ class DroneBackend:
         # Valid commands
         self.VALID_EVENTS = [
             "init", "takeoff", "land", "emergency",
-            "rtl", "lawn", "restart", "aoi", "return"  # Added aoi and return
+            "rtl", "lawn", "restart", "aoi",
+            "plb_upload", "plb_start", "return"  # Added aoi and return
         ]
         
         # Callbacks

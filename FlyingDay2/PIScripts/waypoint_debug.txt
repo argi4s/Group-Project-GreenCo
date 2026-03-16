@@ -14850,3 +14850,5259 @@ Difference: 0.00m E/W, 0.02m N/S, 0.02m total
 --- End Debug ---
 
 distance_to: current=(-2.6687837,51.4241699) target=(-2.6687909,51.4241690) dist=0.51m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713923,51.4234249) target=(-1.9254600,52.4525300) dist=125335.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713923,51.4234249) target=(-1.9254600,52.4525300) dist=125335.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713923,51.4234249) target=(-1.9254600,52.4525300) dist=125335.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713923,51.4234249) target=(-1.9254600,52.4525300) dist=125335.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713923,51.4234249) target=(-1.9254600,52.4525300) dist=125335.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713923,51.4234249) target=(-1.9254600,52.4525300) dist=125335.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713923,51.4234249) target=(-1.9254600,52.4525300) dist=125335.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713923,51.4234249) target=(-1.9254600,52.4525300) dist=125335.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713923,51.4234249) target=(-1.9254600,52.4525300) dist=125335.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713923,51.4234249) target=(-1.9254600,52.4525300) dist=125335.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713923,51.4234249) target=(-1.9254600,52.4525300) dist=125335.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6713490,51.4234860) target=(-1.9254600,52.4525300) dist=125328.03m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6711575,51.4237528) target=(-1.9254600,52.4525300) dist=125295.52m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6711575,51.4237528) target=(-1.9254600,52.4525300) dist=125295.52m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6711431,51.4237730) target=(-1.9254600,52.4525300) dist=125293.07m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6711287,51.4237932) target=(-1.9254600,52.4525300) dist=125290.61m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6711287,51.4237932) target=(-1.9254600,52.4525300) dist=125290.61m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6711287,51.4237932) target=(-1.9254600,52.4525300) dist=125290.61m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6710852,51.4238538) target=(-1.9254600,52.4525300) dist=125283.23m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6710852,51.4238538) target=(-1.9254600,52.4525300) dist=125283.23m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6710126,51.4239550) target=(-1.9254600,52.4525300) dist=125270.90m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6710126,51.4239550) target=(-1.9254600,52.4525300) dist=125270.90m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6709835,51.4239957) target=(-1.9254600,52.4525300) dist=125265.94m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6709835,51.4239957) target=(-1.9254600,52.4525300) dist=125265.94m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6709835,51.4239957) target=(-1.9254600,52.4525300) dist=125265.94m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6709835,51.4239957) target=(-1.9254600,52.4525300) dist=125265.94m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6708958,51.4241180) target=(-1.9254600,52.4525300) dist=125251.05m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6708958,51.4241180) target=(-1.9254600,52.4525300) dist=125251.05m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6708958,51.4241180) target=(-1.9254600,52.4525300) dist=125251.05m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6708958,51.4241180) target=(-1.9254600,52.4525300) dist=125251.05m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6708958,51.4241180) target=(-1.9254600,52.4525300) dist=125251.05m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6708958,51.4241180) target=(-1.9254600,52.4525300) dist=125251.05m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6707934,51.4242609) target=(-1.9254600,52.4525300) dist=125233.64m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6707934,51.4242609) target=(-1.9254600,52.4525300) dist=125233.64m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6707934,51.4242609) target=(-1.9254600,52.4525300) dist=125233.64m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6707934,51.4242609) target=(-1.9254600,52.4525300) dist=125233.64m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6707934,51.4242609) target=(-1.9254600,52.4525300) dist=125233.64m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6707934,51.4242609) target=(-1.9254600,52.4525300) dist=125233.64m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6707934,51.4242609) target=(-1.9254600,52.4525300) dist=125233.64m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6707934,51.4242609) target=(-1.9254600,52.4525300) dist=125233.64m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6706764,51.4244240) target=(-1.9254600,52.4525300) dist=125213.78m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6706764,51.4244240) target=(-1.9254600,52.4525300) dist=125213.78m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6706471,51.4244649) target=(-1.9254600,52.4525300) dist=125208.80m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6706471,51.4244649) target=(-1.9254600,52.4525300) dist=125208.80m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6706031,51.4245263) target=(-1.9254600,52.4525300) dist=125201.32m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6706031,51.4245263) target=(-1.9254600,52.4525300) dist=125201.32m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6706031,51.4245263) target=(-1.9254600,52.4525300) dist=125201.32m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6705298,51.4246287) target=(-1.9254600,52.4525300) dist=125188.85m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6705298,51.4246287) target=(-1.9254600,52.4525300) dist=125188.85m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6705298,51.4246287) target=(-1.9254600,52.4525300) dist=125188.85m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6705298,51.4246287) target=(-1.9254600,52.4525300) dist=125188.85m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6705298,51.4246287) target=(-1.9254600,52.4525300) dist=125188.85m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6705298,51.4246287) target=(-1.9254600,52.4525300) dist=125188.85m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6705298,51.4246287) target=(-1.9254600,52.4525300) dist=125188.85m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6705298,51.4246287) target=(-1.9254600,52.4525300) dist=125188.85m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703832,51.4248332) target=(-1.9254600,52.4525300) dist=125163.94m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703686,51.4248536) target=(-1.9254600,52.4525300) dist=125161.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703686,51.4248536) target=(-1.9254600,52.4525300) dist=125161.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703686,51.4248536) target=(-1.9254600,52.4525300) dist=125161.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703686,51.4248536) target=(-1.9254600,52.4525300) dist=125161.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703686,51.4248536) target=(-1.9254600,52.4525300) dist=125161.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703686,51.4248536) target=(-1.9254600,52.4525300) dist=125161.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703686,51.4248536) target=(-1.9254600,52.4525300) dist=125161.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703686,51.4248536) target=(-1.9254600,52.4525300) dist=125161.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703686,51.4248536) target=(-1.9254600,52.4525300) dist=125161.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703686,51.4248536) target=(-1.9254600,52.4525300) dist=125161.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703686,51.4248536) target=(-1.9254600,52.4525300) dist=125161.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703686,51.4248536) target=(-1.9254600,52.4525300) dist=125161.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6703686,51.4248536) target=(-1.9254600,52.4525300) dist=125161.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6701339,51.4251812) target=(-1.9254600,52.4525300) dist=125121.56m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6701339,51.4251812) target=(-1.9254600,52.4525300) dist=125121.56m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6701045,51.4252221) target=(-1.9254600,52.4525300) dist=125116.58m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6701045,51.4252221) target=(-1.9254600,52.4525300) dist=125116.58m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6701045,51.4252221) target=(-1.9254600,52.4525300) dist=125116.58m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6701045,51.4252221) target=(-1.9254600,52.4525300) dist=125116.58m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6701045,51.4252221) target=(-1.9254600,52.4525300) dist=125116.58m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6700311,51.4253246) target=(-1.9254600,52.4525300) dist=125104.09m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6700311,51.4253246) target=(-1.9254600,52.4525300) dist=125104.09m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6699869,51.4253862) target=(-1.9254600,52.4525300) dist=125096.59m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6699869,51.4253862) target=(-1.9254600,52.4525300) dist=125096.59m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6699575,51.4254273) target=(-1.9254600,52.4525300) dist=125091.59m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6699575,51.4254273) target=(-1.9254600,52.4525300) dist=125091.59m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6699134,51.4254887) target=(-1.9254600,52.4525300) dist=125084.11m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6699134,51.4254887) target=(-1.9254600,52.4525300) dist=125084.11m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6699134,51.4254887) target=(-1.9254600,52.4525300) dist=125084.11m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6699134,51.4254887) target=(-1.9254600,52.4525300) dist=125084.11m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6699134,51.4254887) target=(-1.9254600,52.4525300) dist=125084.11m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6698257,51.4256111) target=(-1.9254600,52.4525300) dist=125069.20m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6698257,51.4256111) target=(-1.9254600,52.4525300) dist=125069.20m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6697818,51.4256724) target=(-1.9254600,52.4525300) dist=125061.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6697818,51.4256724) target=(-1.9254600,52.4525300) dist=125061.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6697818,51.4256724) target=(-1.9254600,52.4525300) dist=125061.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6697818,51.4256724) target=(-1.9254600,52.4525300) dist=125061.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6697818,51.4256724) target=(-1.9254600,52.4525300) dist=125061.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6697818,51.4256724) target=(-1.9254600,52.4525300) dist=125061.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6697818,51.4256724) target=(-1.9254600,52.4525300) dist=125061.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6697818,51.4256724) target=(-1.9254600,52.4525300) dist=125061.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6697818,51.4256724) target=(-1.9254600,52.4525300) dist=125061.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6697818,51.4256724) target=(-1.9254600,52.4525300) dist=125061.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6697818,51.4256724) target=(-1.9254600,52.4525300) dist=125061.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6696054,51.4259186) target=(-1.9254600,52.4525300) dist=125031.75m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6696054,51.4259186) target=(-1.9254600,52.4525300) dist=125031.75m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6695760,51.4259596) target=(-1.9254600,52.4525300) dist=125026.76m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6695760,51.4259596) target=(-1.9254600,52.4525300) dist=125026.76m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6695467,51.4260004) target=(-1.9254600,52.4525300) dist=125021.79m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6695467,51.4260004) target=(-1.9254600,52.4525300) dist=125021.79m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6695028,51.4260618) target=(-1.9254600,52.4525300) dist=125014.31m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6695028,51.4260618) target=(-1.9254600,52.4525300) dist=125014.31m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6695028,51.4260618) target=(-1.9254600,52.4525300) dist=125014.31m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6695028,51.4260618) target=(-1.9254600,52.4525300) dist=125014.31m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6695028,51.4260618) target=(-1.9254600,52.4525300) dist=125014.31m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6693706,51.4262462) target=(-1.9254600,52.4525300) dist=124991.85m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6693706,51.4262462) target=(-1.9254600,52.4525300) dist=124991.85m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6693412,51.4262872) target=(-1.9254600,52.4525300) dist=124986.86m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6693412,51.4262872) target=(-1.9254600,52.4525300) dist=124986.86m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6693412,51.4262872) target=(-1.9254600,52.4525300) dist=124986.86m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6693412,51.4262872) target=(-1.9254600,52.4525300) dist=124986.86m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6693412,51.4262872) target=(-1.9254600,52.4525300) dist=124986.86m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6692678,51.4263897) target=(-1.9254600,52.4525300) dist=124974.38m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6692678,51.4263897) target=(-1.9254600,52.4525300) dist=124974.38m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6692678,51.4263897) target=(-1.9254600,52.4525300) dist=124974.38m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6692678,51.4263897) target=(-1.9254600,52.4525300) dist=124974.38m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6692678,51.4263897) target=(-1.9254600,52.4525300) dist=124974.38m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6691945,51.4264919) target=(-1.9254600,52.4525300) dist=124961.93m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6691945,51.4264919) target=(-1.9254600,52.4525300) dist=124961.93m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6691945,51.4264919) target=(-1.9254600,52.4525300) dist=124961.93m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6691358,51.4265739) target=(-1.9254600,52.4525300) dist=124951.94m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6691358,51.4265739) target=(-1.9254600,52.4525300) dist=124951.94m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6690917,51.4266354) target=(-1.9254600,52.4525300) dist=124944.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6690917,51.4266354) target=(-1.9254600,52.4525300) dist=124944.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6690623,51.4266764) target=(-1.9254600,52.4525300) dist=124939.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6690623,51.4266764) target=(-1.9254600,52.4525300) dist=124939.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6690623,51.4266764) target=(-1.9254600,52.4525300) dist=124939.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6690181,51.4267380) target=(-1.9254600,52.4525300) dist=124931.95m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6690035,51.4267584) target=(-1.9254600,52.4525300) dist=124929.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6690035,51.4267584) target=(-1.9254600,52.4525300) dist=124929.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6689742,51.4267992) target=(-1.9254600,52.4525300) dist=124924.50m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6689742,51.4267992) target=(-1.9254600,52.4525300) dist=124924.50m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6689742,51.4267992) target=(-1.9254600,52.4525300) dist=124924.50m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6689742,51.4267992) target=(-1.9254600,52.4525300) dist=124924.50m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6689742,51.4267992) target=(-1.9254600,52.4525300) dist=124924.50m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6689742,51.4267992) target=(-1.9254600,52.4525300) dist=124924.50m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6689742,51.4267992) target=(-1.9254600,52.4525300) dist=124924.50m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6689742,51.4267992) target=(-1.9254600,52.4525300) dist=124924.50m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6688129,51.4270244) target=(-1.9254600,52.4525300) dist=124897.08m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6687982,51.4270449) target=(-1.9254600,52.4525300) dist=124894.58m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6687982,51.4270449) target=(-1.9254600,52.4525300) dist=124894.58m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6687982,51.4270449) target=(-1.9254600,52.4525300) dist=124894.58m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6687982,51.4270449) target=(-1.9254600,52.4525300) dist=124894.58m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6687982,51.4270449) target=(-1.9254600,52.4525300) dist=124894.58m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6687246,51.4271475) target=(-1.9254600,52.4525300) dist=124882.08m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6687099,51.4271680) target=(-1.9254600,52.4525300) dist=124879.58m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6687099,51.4271680) target=(-1.9254600,52.4525300) dist=124879.58m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6686659,51.4272294) target=(-1.9254600,52.4525300) dist=124872.11m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6686659,51.4272294) target=(-1.9254600,52.4525300) dist=124872.11m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6686367,51.4272702) target=(-1.9254600,52.4525300) dist=124867.14m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6686367,51.4272702) target=(-1.9254600,52.4525300) dist=124867.14m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6686367,51.4272702) target=(-1.9254600,52.4525300) dist=124867.14m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6685637,51.4273721) target=(-1.9254600,52.4525300) dist=124854.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6685637,51.4273721) target=(-1.9254600,52.4525300) dist=124854.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6685343,51.4274131) target=(-1.9254600,52.4525300) dist=124849.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6685343,51.4274131) target=(-1.9254600,52.4525300) dist=124849.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6684902,51.4274746) target=(-1.9254600,52.4525300) dist=124842.24m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6684902,51.4274746) target=(-1.9254600,52.4525300) dist=124842.24m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6684902,51.4274746) target=(-1.9254600,52.4525300) dist=124842.24m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6684902,51.4274746) target=(-1.9254600,52.4525300) dist=124842.24m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6684902,51.4274746) target=(-1.9254600,52.4525300) dist=124842.24m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6684902,51.4274746) target=(-1.9254600,52.4525300) dist=124842.24m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6683726,51.4276386) target=(-1.9254600,52.4525300) dist=124822.27m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6683726,51.4276386) target=(-1.9254600,52.4525300) dist=124822.27m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6683286,51.4277000) target=(-1.9254600,52.4525300) dist=124814.79m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6683286,51.4277000) target=(-1.9254600,52.4525300) dist=124814.79m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6683286,51.4277000) target=(-1.9254600,52.4525300) dist=124814.79m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6683286,51.4277000) target=(-1.9254600,52.4525300) dist=124814.79m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6682701,51.4277818) target=(-1.9254600,52.4525300) dist=124804.83m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6682701,51.4277818) target=(-1.9254600,52.4525300) dist=124804.83m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6682701,51.4277818) target=(-1.9254600,52.4525300) dist=124804.83m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6682701,51.4277818) target=(-1.9254600,52.4525300) dist=124804.83m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6682261,51.4278432) target=(-1.9254600,52.4525300) dist=124797.35m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6682261,51.4278432) target=(-1.9254600,52.4525300) dist=124797.35m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6682261,51.4278432) target=(-1.9254600,52.4525300) dist=124797.35m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6682261,51.4278432) target=(-1.9254600,52.4525300) dist=124797.35m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6682261,51.4278432) target=(-1.9254600,52.4525300) dist=124797.35m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6682261,51.4278432) target=(-1.9254600,52.4525300) dist=124797.35m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6681084,51.4280072) target=(-1.9254600,52.4525300) dist=124777.38m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6680937,51.4280278) target=(-1.9254600,52.4525300) dist=124774.87m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6680937,51.4280278) target=(-1.9254600,52.4525300) dist=124774.87m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6680937,51.4280278) target=(-1.9254600,52.4525300) dist=124774.87m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6680350,51.4281097) target=(-1.9254600,52.4525300) dist=124764.89m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6680350,51.4281097) target=(-1.9254600,52.4525300) dist=124764.89m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6680350,51.4281097) target=(-1.9254600,52.4525300) dist=124764.89m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6680350,51.4281097) target=(-1.9254600,52.4525300) dist=124764.89m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6679471,51.4282324) target=(-1.9254600,52.4525300) dist=124749.95m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6679471,51.4282324) target=(-1.9254600,52.4525300) dist=124749.95m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6679323,51.4282529) target=(-1.9254600,52.4525300) dist=124747.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6679030,51.4282939) target=(-1.9254600,52.4525300) dist=124742.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6679030,51.4282939) target=(-1.9254600,52.4525300) dist=124742.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6679030,51.4282939) target=(-1.9254600,52.4525300) dist=124742.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6679030,51.4282939) target=(-1.9254600,52.4525300) dist=124742.46m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6678442,51.4283759) target=(-1.9254600,52.4525300) dist=124732.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6678442,51.4283759) target=(-1.9254600,52.4525300) dist=124732.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6678442,51.4283759) target=(-1.9254600,52.4525300) dist=124732.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6677854,51.4284580) target=(-1.9254600,52.4525300) dist=124722.48m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6677854,51.4284580) target=(-1.9254600,52.4525300) dist=124722.48m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6677415,51.4285192) target=(-1.9254600,52.4525300) dist=124715.02m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6677415,51.4285192) target=(-1.9254600,52.4525300) dist=124715.02m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6677122,51.4285600) target=(-1.9254600,52.4525300) dist=124710.05m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6677122,51.4285600) target=(-1.9254600,52.4525300) dist=124710.05m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6676829,51.4286010) target=(-1.9254600,52.4525300) dist=124705.06m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6676682,51.4286215) target=(-1.9254600,52.4525300) dist=124702.56m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6676535,51.4286420) target=(-1.9254600,52.4525300) dist=124700.07m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6676535,51.4286420) target=(-1.9254600,52.4525300) dist=124700.07m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6676535,51.4286420) target=(-1.9254600,52.4525300) dist=124700.07m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6675801,51.4287444) target=(-1.9254600,52.4525300) dist=124687.59m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6675801,51.4287444) target=(-1.9254600,52.4525300) dist=124687.59m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6675801,51.4287444) target=(-1.9254600,52.4525300) dist=124687.59m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6675212,51.4288266) target=(-1.9254600,52.4525300) dist=124677.58m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6675065,51.4288471) target=(-1.9254600,52.4525300) dist=124675.09m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6674918,51.4288676) target=(-1.9254600,52.4525300) dist=124672.59m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6674918,51.4288676) target=(-1.9254600,52.4525300) dist=124672.59m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6674625,51.4289085) target=(-1.9254600,52.4525300) dist=124667.61m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6674625,51.4289085) target=(-1.9254600,52.4525300) dist=124667.61m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6674625,51.4289085) target=(-1.9254600,52.4525300) dist=124667.61m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6674625,51.4289085) target=(-1.9254600,52.4525300) dist=124667.61m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6674625,51.4289085) target=(-1.9254600,52.4525300) dist=124667.61m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6673748,51.4290309) target=(-1.9254600,52.4525300) dist=124652.70m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6673748,51.4290309) target=(-1.9254600,52.4525300) dist=124652.70m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6673455,51.4290717) target=(-1.9254600,52.4525300) dist=124647.73m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6673309,51.4290922) target=(-1.9254600,52.4525300) dist=124645.24m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6673309,51.4290922) target=(-1.9254600,52.4525300) dist=124645.24m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6673309,51.4290922) target=(-1.9254600,52.4525300) dist=124645.24m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6672721,51.4291742) target=(-1.9254600,52.4525300) dist=124635.25m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6672721,51.4291742) target=(-1.9254600,52.4525300) dist=124635.25m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6672721,51.4291742) target=(-1.9254600,52.4525300) dist=124635.25m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6672721,51.4291742) target=(-1.9254600,52.4525300) dist=124635.25m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6671839,51.4292972) target=(-1.9254600,52.4525300) dist=124620.27m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6671839,51.4292972) target=(-1.9254600,52.4525300) dist=124620.27m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6671398,51.4293587) target=(-1.9254600,52.4525300) dist=124612.78m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6671398,51.4293587) target=(-1.9254600,52.4525300) dist=124612.78m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6671398,51.4293587) target=(-1.9254600,52.4525300) dist=124612.78m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6671398,51.4293587) target=(-1.9254600,52.4525300) dist=124612.78m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6670812,51.4294405) target=(-1.9254600,52.4525300) dist=124602.82m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6670812,51.4294405) target=(-1.9254600,52.4525300) dist=124602.82m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6670812,51.4294405) target=(-1.9254600,52.4525300) dist=124602.82m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6670812,51.4294405) target=(-1.9254600,52.4525300) dist=124602.82m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6670812,51.4294405) target=(-1.9254600,52.4525300) dist=124602.82m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6670812,51.4294405) target=(-1.9254600,52.4525300) dist=124602.82m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6670812,51.4294405) target=(-1.9254600,52.4525300) dist=124602.82m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6670812,51.4294405) target=(-1.9254600,52.4525300) dist=124602.82m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6670812,51.4294405) target=(-1.9254600,52.4525300) dist=124602.82m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6669344,51.4296453) target=(-1.9254600,52.4525300) dist=124577.87m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6669344,51.4296453) target=(-1.9254600,52.4525300) dist=124577.87m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6668903,51.4297068) target=(-1.9254600,52.4525300) dist=124570.38m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6668903,51.4297068) target=(-1.9254600,52.4525300) dist=124570.38m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6668609,51.4297479) target=(-1.9254600,52.4525300) dist=124565.38m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6668609,51.4297479) target=(-1.9254600,52.4525300) dist=124565.38m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6668609,51.4297479) target=(-1.9254600,52.4525300) dist=124565.38m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6668609,51.4297479) target=(-1.9254600,52.4525300) dist=124565.38m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6668609,51.4297479) target=(-1.9254600,52.4525300) dist=124565.38m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6667730,51.4298705) target=(-1.9254600,52.4525300) dist=124550.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6667730,51.4298705) target=(-1.9254600,52.4525300) dist=124550.45m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6667583,51.4298910) target=(-1.9254600,52.4525300) dist=124547.95m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6667583,51.4298910) target=(-1.9254600,52.4525300) dist=124547.95m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6666996,51.4299729) target=(-1.9254600,52.4525300) dist=124537.97m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6666996,51.4299729) target=(-1.9254600,52.4525300) dist=124537.97m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6666702,51.4300139) target=(-1.9254600,52.4525300) dist=124532.98m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6666702,51.4300139) target=(-1.9254600,52.4525300) dist=124532.98m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6666261,51.4300755) target=(-1.9254600,52.4525300) dist=124525.48m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6666261,51.4300755) target=(-1.9254600,52.4525300) dist=124525.48m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6666261,51.4300755) target=(-1.9254600,52.4525300) dist=124525.48m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6666261,51.4300755) target=(-1.9254600,52.4525300) dist=124525.48m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6666261,51.4300755) target=(-1.9254600,52.4525300) dist=124525.48m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6665380,51.4301983) target=(-1.9254600,52.4525300) dist=124510.52m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6665380,51.4301983) target=(-1.9254600,52.4525300) dist=124510.52m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664941,51.4302596) target=(-1.9254600,52.4525300) dist=124503.06m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664941,51.4302596) target=(-1.9254600,52.4525300) dist=124503.06m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664941,51.4302596) target=(-1.9254600,52.4525300) dist=124503.06m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664941,51.4302596) target=(-1.9254600,52.4525300) dist=124503.06m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664941,51.4302596) target=(-1.9254600,52.4525300) dist=124503.06m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664941,51.4302596) target=(-1.9254600,52.4525300) dist=124503.06m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664941,51.4302596) target=(-1.9254600,52.4525300) dist=124503.06m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664941,51.4302596) target=(-1.9254600,52.4525300) dist=124503.06m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664941,51.4302596) target=(-1.9254600,52.4525300) dist=124503.06m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664941,51.4302596) target=(-1.9254600,52.4525300) dist=124503.06m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664941,51.4302596) target=(-1.9254600,52.4525300) dist=124503.06m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664839,51.4302738) target=(-1.9254600,52.4525300) dist=124501.33m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664839,51.4302738) target=(-1.9254600,52.4525300) dist=124501.33m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664839,51.4302738) target=(-1.9254600,52.4525300) dist=124501.33m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664841,51.4302735) target=(-1.9254600,52.4525300) dist=124501.36m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664841,51.4302735) target=(-1.9254600,52.4525300) dist=124501.36m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664842,51.4302732) target=(-1.9254600,52.4525300) dist=124501.40m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664842,51.4302732) target=(-1.9254600,52.4525300) dist=124501.40m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664842,51.4302731) target=(-1.9254600,52.4525300) dist=124501.41m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664842,51.4302731) target=(-1.9254600,52.4525300) dist=124501.41m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664842,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664842,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664842,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664842,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664842,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664844,51.4302728) target=(-1.9254600,52.4525300) dist=124501.44m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302729) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664845,51.4302730) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302730) target=(-1.9254600,52.4525300) dist=124501.43m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664846,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+Autopilot target: (-1.9254601, 52.4525299, 10.07)
+Difference: 0.01m E/W, 0.01m N/S, 0.01m total
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6664847,51.4302731) target=(-1.9254600,52.4525300) dist=124501.42m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713920,51.4234247) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713920,51.4234247) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713920,51.4234247) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713920,51.4234247) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713920,51.4234247) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713920,51.4234247) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713920,51.4234247) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713920,51.4234247) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713920,51.4234247) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713920,51.4234247) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713920,51.4234247) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+--- Position Target Debug ---
+Command sent to: (-1.9254600, 52.4525300, 10.00)
+Heading: AUTO
+Sent as ints: lon=-19254600, lat=524525300
+❌ No POSITION_TARGET_GLOBAL_INT response from autopilot
+--- End Debug ---
+
+distance_to: current=(-2.6713919,51.4234246) target=(-1.9254600,52.4525300) dist=125335.47m
+
+=== PLB Mission Debug ===
+Total waypoints: 5
+Start position: (-2.6713923, 51.4234249, 10.001)
+
+
+=== AOI Mission Debug ===
+Total waypoints: 5
+Start position: (-2.6713919, 51.4234247, 9.723)
+

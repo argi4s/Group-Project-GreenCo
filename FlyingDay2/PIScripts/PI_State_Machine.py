@@ -9,16 +9,28 @@ import socket
 import os
 
 from lawnmower import plan_lawnmower, CameraFootprintRef, Waypoint
-from camera_stream import CameraStream  # <-- NEW IMPORT
+
 
 # -------------------------
 # INITIALISE CAMERA
 # -------------------------
-camera = CameraStream(
-    video_ip="192.168.1.17",  # Your PC IP
-    video_port=5800,
-    vec_port=5801
-)
+# Check if we should run in development mode
+DEV_MODE = os.environ.get('DRONE_DEV_MODE', 'false').lower() == 'true'
+
+if DEV_MODE:
+    print("[DEV MODE] Running in development mode - camera disabled")
+    # Create a dummy camera object that does nothing
+    class DummyCamera:
+        def start(self): print("[DEV MODE] Dummy camera start")
+        def stop(self): print("[DEV MODE] Dummy camera stop")
+    camera = DummyCamera()
+else:
+    from camera_stream import CameraStream
+    camera = CameraStream(
+        video_ip="192.168.1.17",
+        video_port=5800,
+        vec_port=5801
+    )
 
 # -------------------------
 # STATES
@@ -28,10 +40,41 @@ STATE_TAKEOFF = "TAKEOFF"
 STATE_FLIGHT = "FLIGHT"
 STATE_LAND = "LAND"
 STATE_EMERGENCY = "EMERGENCY"
+STATE_AOI = "AOI"
+STATE_PLB = "PLB"
+STATE_RETURN = "RETURN"
 STATE_LAWNMOWER = "LAWN"
 STATE_RTL = "RTL"
 
 current_state = STATE_INIT
+
+# -------------------------
+# HARDCODED PATHS
+# ------------------------
+
+RETURN_WPS = [
+    (-2.6716371, 51.4233850),
+    (-2.6669526, 51.4237044),
+    (-2.6662177, 51.4227243),
+    (-2.6699513, 51.4217375),
+    (-2.6716378, 51.4233848)
+]
+# Not following ISO 6709 the typical convention as this confuses us as developers and users of mavlink. We can expose at the front end conventional lon, lat order as expected but will not do so internally - Kory
+
+
+AOI_WPS = RETURN_WPS[::-1]
+
+SEARCH_AREA = [
+    (-2.670948345438704, 51.42326956502679),
+    (-2.670045428650557, 51.42287025017865),
+    (-2.668169295906676, 51.42336622593724),
+    (-2.668809768621569, 51.42421477437771),
+    (-2.671277780473196, 51.42354069739116),
+    (-2.670948345438704, 51.42326956502679)
+]
+
+PLB = []
+
 
 # -------------------------
 # AUTO-DETECT PI'S IP
@@ -159,7 +202,7 @@ def handle_event(event, param):
 
     # EMERGENCY - Highest priority, kills drone immediately
     if event == "emergency":
-        print("\n🚨 EMERGENCY! Killing drone...")
+        print("\n EMERGENCY! Killing drone...")
         drone.emergency()
         current_state = STATE_EMERGENCY
         send_status("EMERGENCY - Drone killed", type_="EMERGENCY")
@@ -167,20 +210,20 @@ def handle_event(event, param):
 
     # RTL - Return to launch (interrupts anything)
     if event == "rtl":
-        print("\n🔄 RTL triggered - returning to launch...")
+        print("\n RTL triggered - returning to launch...")
         send_status("RTL triggered", type_="RTL")
         current_state = STATE_RTL
         drone.rtl()  # This just sets the flag and sends command
         return
 
-    # 🚁 TAKEOFF - Can be called from any state (except emergency)
+    #  TAKEOFF - Can be called from any state (except emergency)
     if event == "takeoff":
         # Don't take off if in emergency
         if current_state == STATE_EMERGENCY:
             send_status("In EMERGENCY - cannot take off", type_="FSM")
             return
             
-        print("\n🚁 TAKEOFF triggered...")
+        print("\n TAKEOFF triggered...")
         
         # Arm if not already armed
         if not drone.armed:
@@ -232,7 +275,38 @@ def handle_event(event, param):
     if current_state == STATE_EMERGENCY:
         send_status("In EMERGENCY state - command ignored", type_="FSM")
         return
-     
+    
+    if event == "plb_upload":
+        print("\n PLB waypoints received")
+    
+        if not param:
+            send_status("No PLB waypoints provided", type_="FSM")
+            return
+        
+        try:
+            # Parse the waypoints from param (format: "lon1,lat1,lon2,lat2,...")
+            coords = [float(x) for x in param.split(',')]
+            if len(coords) % 2 != 0:
+                raise ValueError("Odd number of coordinates")
+            
+            # Create waypoints list (lon, lat, current altitude)
+            _, _, current_alt = drone.position
+            if current_alt is None or current_alt < 5:
+                current_alt = 20  # Default altitude if not available
+            
+            global PLB_WPS  # Make it accessible globally
+            PLB_WPS = []
+            for i in range(0, len(coords), 2):
+                lon, lat = coords[i], coords[i+1]
+                PLB_WPS.append((lon, lat, current_alt))
+            
+            send_status(f"PLB mission loaded with {len(PLB_WPS)} waypoints", type_="FSM")
+            print(f"[INFO] Loaded {len(PLB_WPS)} PLB waypoints")
+        
+        except Exception as e:
+            send_status(f"Failed to parse PLB waypoints: {e}", type_="FSM")
+            print(f"[ERROR] PLB parsing failed: {e}")
+    
     if event == "land":
         current_state = STATE_LAND
         send_status("Descending", type_="LAND")
@@ -265,7 +339,7 @@ def handle_event(event, param):
             altitude_m = drone.position[2] if drone.position[2] > 0 else 10
 
             waypoints = plan_lawnmower(
-                search_polygon=lawn_polygon,
+                search_polygon=SEARCH_AREA,
                 altitude_m=altitude_m,
                 origin_lonlat=(origin_lon, origin_lat),
                 camera_ref=CameraFootprintRef(
@@ -314,7 +388,7 @@ def handle_event(event, param):
                             send_status("Lawnmower interrupted by RTL", type_="FSM")
                             return
                         elif "Emergency active" in error_str:
-                            print("🚨 Emergency interrupted lawn mission")
+                            print(" Emergency interrupted lawn mission")
                             current_state = STATE_EMERGENCY
                             send_status("Lawnmower interrupted by EMERGENCY", type_="FSM")
                             return
@@ -330,16 +404,17 @@ def handle_event(event, param):
             if current_state == STATE_LAWNMOWER:
                 send_status("Lawnmower mission complete", type_="FSM")
                 current_state = STATE_FLIGHT
-
+        
         elif event == "aoi":  # New AOI command
-            current_state = STATE_AOI
             send_status(f"AOI mission started with {len(AOI_WPS)} waypoints", type_="FSM")
+            origin_lon, origin_lat = drone.position[:2]
+            altitude_m = drone.position[2] if drone.position[2] > 0 else 10
         
             with open("waypoint_debug.txt", "a") as debug_file:
                 debug_file.write(f"\n=== AOI Mission Debug ===\n")
                 debug_file.write(f"Total waypoints: {len(AOI_WPS)}\n")
                 debug_file.write(f"Start position: {drone.position}\n\n")
-            
+                current_state = STATE_AOI
                 # Fly the AOI waypoints
                 for i, wp in enumerate(AOI_WPS):
                     # Check for interrupts
@@ -352,21 +427,21 @@ def handle_event(event, param):
 
                     try:
                         if FIXED_HEADING != -1:
-                            drone.move_to_wp(lon, lat, alt, heading=FIXED_HEADING)
+                            drone.move_to_wp(lon, lat, drone.position[:2], heading=FIXED_HEADING)
                         else:
-                            drone.move_to_wp(lon, lat, alt)
+                            drone.move_to_wp(lon, lat, drone.position[:2])
                         debug_file.write(f"AOI WP{i+1} completed successfully\n")
                     except RuntimeError as e:
                         error_str = str(e)
                         debug_file.write(f"EXCEPTION in AOI mission: {error_str}\n")
 
                         if "RTL active" in error_str:
-                            print("🔄 RTL interrupted AOI mission")
+                            print(" RTL interrupted AOI mission")
                             current_state = STATE_RTL
                             send_status("AOI mission interrupted by RTL", type_="FSM")
                             return
                         elif "Emergency active" in error_str:
-                            print("🚨 Emergency interrupted AOI mission")
+                            print(" Emergency interrupted AOI mission")
                             current_state = STATE_EMERGENCY
                             send_status("AOI mission interrupted by EMERGENCY", type_="FSM")
                             return
@@ -376,6 +451,56 @@ def handle_event(event, param):
                     debug_file.flush()
 
                 debug_file.write("AOI mission complete\n")
+    
+            if current_state == STATE_AOI:
+                send_status("AOI mission complete", type_="FSM")
+                current_state = STATE_FLIGHT
+
+        elif event == "plb_start":  # New PLB command
+            current_state = STATE_PLB
+            send_status(f"PLB mission started with {len(PLB_WPS)} waypoints", type_="FSM")
+        
+            with open("waypoint_debug.txt", "a") as debug_file:
+                debug_file.write(f"\n=== PLB Mission Debug ===\n")
+                debug_file.write(f"Total waypoints: {len(PLB_WPS)}\n")
+                debug_file.write(f"Start position: {drone.position}\n\n")
+            
+                # Fly the AOI waypoints
+                for i, wp in enumerate(PLB_WPS):
+                    # Check for interrupts
+                    if current_state != STATE_PLB:
+                        debug_file.write(f"State changed to {current_state}, breaking\n")
+                        break
+
+                    lon, lat, alt = wp
+                    send_status(f"PLB WP {i+1}/{len(PLB_WPS)} -> ({lon:.7f},{lat:.7f},{alt:.2f}m)", type_="FSM")
+
+                    try:
+                        if FIXED_HEADING != -1:
+                            drone.move_to_wp(lon, lat, drone.position[:2], heading=FIXED_HEADING)
+                        else:
+                            drone.move_to_wp(lon, lat, drone.position[:2])
+                        debug_file.write(f"PLB WP{i+1} completed successfully\n")
+                    except RuntimeError as e:
+                        error_str = str(e)
+                        debug_file.write(f"EXCEPTION in PLB mission: {error_str}\n")
+
+                        if "RTL active" in error_str:
+                            print(" RTL interrupted PLB mission")
+                            current_state = STATE_RTL
+                            send_status("PLB mission interrupted by RTL", type_="FSM")
+                            return
+                        elif "Emergency active" in error_str:
+                            print(" Emergency interrupted PLB mission")
+                            current_state = STATE_EMERGENCY
+                            send_status("PLB mission interrupted by EMERGENCY", type_="FSM")
+                            return
+                        else:
+                            raise
+                
+                    debug_file.flush()
+
+                debug_file.write("PLB mission complete\n")
     
             if current_state == STATE_AOI:
                 send_status("AOI mission complete", type_="FSM")
@@ -402,21 +527,21 @@ def handle_event(event, param):
 
                     try:
                         if FIXED_HEADING != -1:
-                            drone.move_to_wp(lon, lat, alt, heading=FIXED_HEADING)
+                            drone.move_to_wp(lon, lat, drone.position[:2], heading=FIXED_HEADING)
                         else:
-                            drone.move_to_wp(lon, lat, alt)
+                            drone.move_to_wp(lon, lat, drone.position[:2])
                         debug_file.write(f"RETURN WP{i+1} completed successfully\n")
                     except RuntimeError as e:
                         error_str = str(e)
                         debug_file.write(f"EXCEPTION in RETURN mission: {error_str}\n")
 
                         if "RTL active" in error_str:
-                            print("🔄 RTL interrupted RETURN mission")
+                            print(" RTL interrupted RETURN mission")
                             current_state = STATE_RTL
                             send_status("RETURN mission interrupted by RTL", type_="FSM")
                             return
                         elif "Emergency active" in error_str:
-                            print("🚨 Emergency interrupted RETURN mission")
+                            print(" Emergency interrupted RETURN mission")
                             current_state = STATE_EMERGENCY
                             send_status("RETURN mission interrupted by EMERGENCY", type_="FSM")
                             return
@@ -433,6 +558,8 @@ def handle_event(event, param):
 
     # LAND state
     elif current_state == STATE_LAND:
+        if event == 'deploy':
+            set_servo_pwm(1050, 1550, 2050)
         pass
 
     # RTL state
@@ -554,7 +681,7 @@ while True:
     
     # Monitor RTL progress
     if current_state == STATE_RTL and drone.landed():
-        print("✅ RTL complete - drone landed")
+        print(" RTL complete - drone landed")
     
         # ⚠️ CRITICAL: Set mode back to GUIDED for future commands
         drone.set_mode("GUIDED")
@@ -566,7 +693,7 @@ while True:
     
     # Monitor LAND progress
     if current_state == STATE_LAND and drone.landed():
-        print("✅ Landing complete")
+        print(" Landing complete")
     
         # ⚠️ CRITICAL: Set mode back to GUIDED for future commands
         drone.set_mode("GUIDED")

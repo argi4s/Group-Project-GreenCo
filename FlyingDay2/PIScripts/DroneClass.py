@@ -215,7 +215,82 @@ class Drone:
             return (self._alt is not None and 
                     self._alt < 0.5 and 
                     not self._armed)
+                    
+    def descend_straight_down(self, descent_rate_ms: float = 1.0):
+        """
+        Uses velocity control (type_mask = 0b110111000111 = 0x0DC7)
+        descent_rate_ms: Descent speed in m/s (positive = down)
+        """
+        self._check_interrupts()
+    
+        self.busy = True
+        self.rtl_flag = True
+    
+        
+        self._vel_type_mask = 0x0DC7  
+    
+        self.mav.mav.set_position_target_local_ned_send(
+            0,  # time_boot_ms (0 = immediately)
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_FRAME_LOCAL_NED,  # NED frame: X=North, Y=East, Z=Down
+            self._vel_type_mask,
+            0, 0, 0,  # positions (ignored)
+            0, 0, descent_rate_ms,  # vx=0, vy=0, vz=descent_rate (positive = down)
+            0, 0, 0,  # accelerations (ignored)
+            0,  # yaw (ignored)
+            0   # yaw_rate (ignored)
+        )
+    
+        print(f"[INFO] Descending straight down at {descent_rate_ms} m/s")
 
+    def descend_to_altitude(self, target_alt: float, descent_rate: float = 1.0):
+        """
+        Descend straight down at specified speed until reaching target altitude.
+        
+        TODO ADD TIMEOUT PROTECTION
+        """
+        self._check_interrupts()
+    
+        self.busy = True
+        self.rtl_flag = True
+        
+        while True:
+            # Start descending at the specified rate
+            self.descend_straight_down(descent_rate)
+
+            # Check if reached altitude
+            _, _, alt = self.position
+            if alt is not None and abs(alt - target_alt) <= 0.3:
+                break
+
+            time.sleep(0.1)  # <-- Sleep AFTER check, before next command
+
+        # Stop descending
+        self.stop_in_place()
+
+        self.busy = False
+        print(f"[INFO] Reached target altitude: {target_alt}m")
+
+
+    def stop_in_place(self):
+        """Stop and hold position"""
+        # FIXED: Check if type_mask exists, use default if not
+        type_mask = getattr(self, '_vel_type_mask', 0x0DC7)
+    
+        self.mav.mav.set_position_target_local_ned_send(
+            0, 
+            self.target_system, 
+            self.target_component,
+            mavutil.mavlink.MAV_FRAME_LOCAL_NED,
+            type_mask,
+            0, 0, 0,
+            0, 0, 0,  # zero velocity
+            0, 0, 0,
+            0, 0
+        )
+        print("[INFO] Drone stopped in place")
+          
     def rtl(self):
         """Return to launch (RTL)."""
         self._check_interrupts()
@@ -439,6 +514,23 @@ class Drone:
             f.write(f"--- End Debug ---\n\n")
    
         return msg
+        
+    def set_servo_pwm(servo_num, pwm_value):
+        """
+        Sets a specific servo to a PWM value.
+        servo_num: 1-16 (depending on flight controller capabilities)
+        pwm_value: 1000-2000
+        """
+        self.mav.command_long_send(
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_CMD_DO_SET_SERVO,
+            0,            # Confirmation
+            servo_num,    # Servo Number
+            pwm_value,    # PWM value
+            0, 0, 0, 0, 0 # Unused parameters
+        )
+        print(f"Set Servo {servo_num} to {pwm_value}")
     
     def distance_to(self, lon, lat):  # CHANGED: lon first
         """Public wrapper for _distance_to - expects (lon, lat) order."""
@@ -481,7 +573,7 @@ class Drone:
 
             _, _, alt = self.position
             if alt is not None and abs(alt - target_alt) <= tolerance:
-                break
+                return True
 
             time.sleep(0.1)
 
