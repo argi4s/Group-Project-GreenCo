@@ -1,3 +1,37 @@
+
+"""
+Target navigation utilities for closed-loop waypoint generation.    
+
+Takeoff
+-> Search / Patrol / Lawnmower
+-> Detect target
+-> Call target navigation module
+-> Fly to target
+-> Stop at target
+-> Return control to main flow
+
+use these below:
+
+pixel_to_global = build_default_nadir_pixel_to_global(
+    image_width=1280,
+    image_height=720,
+    hfov_deg=70.0,
+    vfov_deg=43.0,
+    get_height_agl_fn=get_height_agl,
+    camera_yaw_deg=0.0,
+)
+
+fsm = TargetClosedLoopFSM(
+    detect_target_fn=detect_target,
+    get_vehicle_pose_fn=get_vehicle_pose,
+    pixel_to_global_fn=pixel_to_global,
+    navigate_to_fn=navigate_to,
+    stop_navigation_fn=stop_navigation,
+    arrival_radius_m=0.8,
+)
+
+"""
+
 from __future__ import annotations
 
 import math
@@ -5,6 +39,7 @@ import time
 from dataclasses import dataclass
 from enum import Enum, auto
 from typing import Any, Callable, Optional
+
 
 
 @dataclass

@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lawnmower Plan (manual)</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    #map { height: 100%; }
+    .legend {
+      position: absolute; z-index: 999;
+      left: 10px; top: 10px;
+      background: rgba(255,255,255,0.9);
+      padding: 10px 12px; border-radius: 8px;
+      font-family: ui-sans-serif, system-ui, -apple-system;
+      font-size: 13px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+<div class="legend">
+  <div><b>Lawnmower Plan (manual)</b></div>
+  <div>• Polygon: search_area</div>
+  <div>• Line: path</div>
+  <div>• Points: TOL / start / end</div>
+</div>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+  const GEO = {"type": "FeatureCollection", "features": [{"type": "Feature", "properties": {"name": "search_area"}, "geometry": {"type": "Polygon", "coordinates": [[[-2.671297, 51.423561], [-2.670066, 51.422842], [-2.668757, 51.424173], [-2.668178, 51.423444], [-2.671297, 51.423561]]]}}, {"type": "Feature", "properties": {"name": "path_manual", "mode": "manual"}, "geometry": {"type": "LineString", "coordinates": [[-2.6686007350903767, 51.42346884076022], [-2.6686007350903767, 51.42396726884142], [-2.6690234701807527, 51.42390205132882], [-2.6690234701807527, 51.42347571529694], [-2.669446205271129, 51.423481194558754], [-2.669446205271129, 51.42348258983366], [-2.6698689403615052, 51.42350743059388], [-2.6698689403615052, 51.423042371565195], [-2.6702916754518817, 51.42298279517504], [-2.6702916754518817, 51.423514305130595], [-2.6707144105422578, 51.423539145890814], [-2.6707144105422578, 51.42322072232322], [-2.6711371456326343, 51.4234766156949], [-2.6711371456326343, 51.42354602042753]]}}, {"type": "Feature", "properties": {"name": "start"}, "geometry": {"type": "Point", "coordinates": [-2.6686007350903767, 51.42346884076022]}}, {"type": "Feature", "properties": {"name": "end"}, "geometry": {"type": "Point", "coordinates": [-2.6711371456326343, 51.42354602042753]}}, {"type": "Feature", "properties": {"name": "TOL"}, "geometry": {"type": "Point", "coordinates": [-2.6715555555555555, 51.42347222222222]}}]};
+
+  const map = L.map('map', { zoomControl: true });
+
+  // base layer
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 20,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  function styleFn(feature) {
+    const name = (feature.properties && feature.properties.name) || "";
+    if (feature.geometry.type === "Polygon") {
+      return { weight: 2, fillOpacity: 0.15 };
+    }
+    if (feature.geometry.type === "LineString") {
+      return { weight: 3 };
+    }
+    return {};
+  }
+
+  function pointToLayer(feature, latlng) {
+    const name = (feature.properties && feature.properties.name) || "pt";
+    if (name === "TOL") return L.circleMarker(latlng, { radius: 7, weight: 2 });
+    if (name === "start") return L.circleMarker(latlng, { radius: 7, weight: 2 });
+    if (name === "end") return L.circleMarker(latlng, { radius: 7, weight: 2 });
+    return L.circleMarker(latlng, { radius: 6, weight: 2 });
+  }
+
+  const layer = L.geoJSON(GEO, {
+    style: styleFn,
+    pointToLayer: pointToLayer,
+    onEachFeature: (feature, lyr) => {
+      const props = feature.properties || {};
+      const name = props.name || feature.geometry.type;
+      const extra = props.mode ? ` (mode=${props.mode})` : "";
+      lyr.bindPopup(`<b>${name}</b>${extra}`);
+    }
+  }).addTo(map);
+
+  const bounds = layer.getBounds();
+  if (bounds && bounds.isValid()) {
+    map.fitBounds(bounds.pad(0.15));
+  } else {
+    map.setView([51.4545, -2.5879], 13); // Bristol fallback
+  }
+</script>
+</body>
+</html>
