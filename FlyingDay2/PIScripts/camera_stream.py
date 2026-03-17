@@ -13,11 +13,14 @@ import os
 import signal
 
 class CameraStream:
-    def __init__(self, video_ip="192.168.1.17", video_port=5800, vec_port=5801,
+    def __init__(self, video_ip="192.168.1.17", video_port=5800, vec_remote_ip="192.168.1.17", vec_local_ip="127.0.0.1", vec_port=5801,
                  width=640, height=480, fps=30, detect_every_n=3):
         # Configuration
         self.VIDEO_IP = video_ip
         self.VIDEO_PORT = video_port
+
+        self.VEC_REMOTE_IP = vec_remote_ip
+        self.VEC_LOCAL_IP = vec_local_ip
         self.VEC_PORT = vec_port
         self.W = width
         self.H = height
@@ -159,8 +162,10 @@ class CameraStream:
                     }
                 
                 try:
-                    self.vec_sock.sendto(json.dumps(msg).encode("utf-8"), 
-                                       (self.VIDEO_IP, self.VEC_PORT))
+                    payload = json.dumps(msg).encode("utf-8")
+                    # Send both to remote ground station and local
+                    self.vec_sock.sendto(payload, (self.VEC_REMOTE_IP, self.VEC_PORT))
+                    self.vec_sock.sendto(payload, (self.VEC_LOCAL_IP, self.VEC_PORT))
                 except:
                     pass
                 

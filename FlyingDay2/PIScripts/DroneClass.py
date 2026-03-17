@@ -35,6 +35,8 @@ class Drone:
         # Interrupt flags
         self.emergency_flag = False
         self.rtl_flag = False
+        # Interrupt after detected
+        self.visual_interrupt_flag = False
 
         # Internal
         self.running = True
@@ -323,6 +325,16 @@ class Drone:
         self.busy = False
         print("[INFO] RTL completed, flag cleared")
 
+    # Stop default flight after stability detection
+    def trigger_visual_interrupt(self):
+        with self._lock:
+            self.visual_interrupt_flag = True
+
+    # Avoid repeated triggering
+    def clear_visual_interrupt(self):
+        with self._lock:
+            self.visual_interrupt_flag = False
+
     def emergency(self):
         """Trigger emergency stop."""
         self.emergency_flag = True
@@ -350,6 +362,7 @@ class Drone:
         )
         time.sleep(0.1)
         print(f"[INFO] Speed set to {speed_m_s} m/s")
+
 
     def move_to_wp(self, lon, lat, alt, speed=None, heading=None):  # CHANGED: added heading
         """Move to a specific waypoint using GUIDED mode.
@@ -601,6 +614,9 @@ class Drone:
 
         if self.rtl_flag:
             raise RuntimeError("RTL active: command blocked")
+
+        if self.visual_interrupt_flag:
+            raise RuntimeError("Visual target found: command interrupted")
 
     def stop(self):
         """Stop the drone and cleanup."""

@@ -10,10 +10,14 @@ import os
 
 from lawnmower import plan_lawnmower, CameraFootprintRef, Waypoint
 
+from camera_stream import CameraStream  # <-- NEW IMPORT
+from vision_receiver import VisionReceiver
+
 
 # -------------------------
 # INITIALISE CAMERA
 # -------------------------
+
 # Check if we should run in development mode
 DEV_MODE = os.environ.get('DRONE_DEV_MODE', 'false').lower() == 'true'
 
@@ -31,6 +35,18 @@ else:
         video_port=5800,
         vec_port=5801
     )
+=======
+camera = CameraStream(
+    video_ip="192.168.1.17",  # Your PC IP
+    video_port=5800,
+    vec_remote_ip="192.168.1.17",
+    vec_local_ip="127.0.0.1",
+    vec_port=5801
+)
+>>>>>>> cd62866 (Update (aiming after detected)- framework and interfaces)
+
+# Hearing the vector to local
+vision = VisionReceiver(host="127.0.0.1", port=5801)
 
 # -------------------------
 # STATES
@@ -46,7 +62,11 @@ STATE_RETURN = "RETURN"
 STATE_LAWNMOWER = "LAWN"
 STATE_RTL = "RTL"
 
+STATE_ALIGN = "ALIGN"
+
 current_state = STATE_INIT
+align_entered = False
+target_acquire_position = None
 
 # -------------------------
 # HARDCODED PATHS
@@ -108,6 +128,7 @@ print("[INFO] Drone connected via MAVLink")
 # START CAMERA
 # -------------------------
 camera.start()  # <-- START CAMERA HERE
+vision.start()  # start vector hearing thread
 
 # -------------------------
 # UDP COMMUNICATION
@@ -188,6 +209,7 @@ def cleanup():
     """Stop camera on exit"""
     print("\n[INFO] Cleaning up...")
     camera.stop()
+    vision.stop()
 
 atexit.register(cleanup)
 
@@ -196,7 +218,7 @@ atexit.register(cleanup)
 # -------------------------
 
 def handle_event(event, param):
-    global current_state, FIXED_HEADING
+    global current_state, FIXED_HEADING, target_acquire_position, align_entered
 
     send_status(f"State={current_state} Event={event}", type_="FSM")
 
@@ -392,6 +414,18 @@ def handle_event(event, param):
                             current_state = STATE_EMERGENCY
                             send_status("Lawnmower interrupted by EMERGENCY", type_="FSM")
                             return
+
+                        elif "Visual target found" in error_str:
+                            print("Visual target found, exiting lawn mission")
+                            target_acquire_position = drone.position
+                            align_entered = False
+                            send_status("Stable target detected, entering ALIGN", type_="FSM")
+                            current_state = STATE_ALIGN
+                            drone.clear_visual_interrupt()
+                            debug_file.write(f"Visual target acquired at position: {target_acquire_position}\n")
+                            debug_file.flush()
+                            break
+
                         else:
                             debug_file.write(f"Unhandled exception: {error_str}\n")
                             raise
@@ -665,6 +699,28 @@ def discovery_listener():
 
 threading.Thread(target=discovery_listener, daemon=True).start()
 
+
+# monitoring vision stream
+def vision_monitor_loop():
+    while True:
+        try:
+            if current_state == STATE_LAWNMOWER:
+                if vision.mostly_visible_for(5.0, 0.9):
+                    print("Target visible in >=90% of last 5s -> trigger visual interrupt")
+                    drone.trigger_visual_interrupt()
+                    time.sleep(0.2)
+                else:
+                    time.sleep(0.05)
+            else:
+                time.sleep(0.05)
+
+        except Exception as e:
+            print(f"[WARNING] vision_monitor_loop error: {e}")
+            time.sleep(0.1)
+
+threading.Thread(target=vision_monitor_loop, daemon=True).start()
+
+
 # -------------------------
 # MAIN LOOP
 # -------------------------
@@ -702,5 +758,26 @@ while True:
         send_status("Landing complete", type_="LAND")
         current_state = STATE_INIT
         send_status("Returned to INIT - Mode set to GUIDED", type_="FSM")
-    
+
+    # Executed only once when entering ALIGN
+    if current_state == STATE_ALIGN and not align_entered:
+        print("Entering ALIGN state")
+        send_status("Entered ALIGN state", type_="FSM")
+        print(f"Target acquired at: {target_acquire_position}")
+        align_entered = True
+        drone.set_speed(0.5)
+
+    # The logic for exiting ALIGN
+    if current_state == STATE_ALIGN:
+        latest = vision.get_latest()
+
+        if latest is not None:
+            print(f"[ALIGN] latest vision = {latest}")
+
+        if vision.lost_for(0.5):
+            print("[ALIGN] target lost for 0.5s -> exit ALIGN")
+            send_status("Target lost in ALIGN, returning to FLIGHT", type_="FSM")
+            current_state = STATE_FLIGHT
+            align_entered = False
+
     time.sleep(0.05)
