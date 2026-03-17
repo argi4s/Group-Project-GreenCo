@@ -13,6 +13,8 @@ from lawnmower import plan_lawnmower, CameraFootprintRef, Waypoint
 from camera_stream import CameraStream  # <-- NEW IMPORT
 from vision_receiver import VisionReceiver
 
+from compute_correction import CorrectionComputer
+
 
 # -------------------------
 # INITIALISE CAMERA
@@ -63,10 +65,24 @@ STATE_LAWNMOWER = "LAWN"
 STATE_RTL = "RTL"
 
 STATE_ALIGN = "ALIGN"
+STATE_DESCEND = "DESCEND"
 
 current_state = STATE_INIT
 align_entered = False
 target_acquire_position = None
+aligned_since_high = None
+
+# keep 1s in stable to begin ALIGN
+ALIGN_HOLD_SECONDS_HIGH = 1.0
+
+correction_high = CorrectionComputer(
+    deadband_x=0.10,
+    deadband_y=0.10,
+    kp_x=0.35,
+    kp_y=0.35,
+    max_vx=0.5,
+    max_vy=0.5,
+)
 
 # -------------------------
 # HARDCODED PATHS
@@ -764,20 +780,63 @@ while True:
         print("Entering ALIGN state")
         send_status("Entered ALIGN state", type_="FSM")
         print(f"Target acquired at: {target_acquire_position}")
+
         align_entered = True
-        drone.set_speed(0.5)
+        aligned_since_high = None
+        # Enter ALIGN from a clean stopped condition
+        drone.stop_motion()
 
     # The logic for exiting ALIGN
     if current_state == STATE_ALIGN:
         latest = vision.get_latest()
+        height_m = drone.position[2]
 
         if latest is not None:
             print(f"[ALIGN] latest vision = {latest}")
 
+        # If there is no target for 0.5 seconds, stop immediately and exit.
         if vision.lost_for(0.5):
             print("[ALIGN] target lost for 0.5s -> exit ALIGN")
+            drone.stop_motion()
             send_status("Target lost in ALIGN, returning to FLIGHT", type_="FSM")
             current_state = STATE_FLIGHT
             align_entered = False
+            aligned_since_high = None
 
-    time.sleep(0.05)
+        else:
+            # Compute correction from current image error
+            cmd = correction_high.compute_align_command(latest, height_m)
+
+            # Valid means there are available vector ,det=1.
+            # Aligned means target goes into the middle 10%x10%.
+            if cmd["valid"]:
+                if cmd["aligned"]:
+                    # Already inside the center 10% x 10% box
+                    drone.stop_motion()
+                    # Hover after entering aligned 1 sec
+                    if aligned_since_high is None:
+                        aligned_since_high = time.time()
+
+                    aligned_duration = time.time() - aligned_since_high
+                    print(f"[ALIGN] stable in center box for {aligned_duration:.2f}s")
+
+                    if aligned_duration >= ALIGN_HOLD_SECONDS_HIGH:
+                        print("[ALIGN] High-altitude alignment stable -> ready for DESCEND")
+                        send_status("High ALIGN stable, entering DESCEND", type_="FSM")
+                        current_state = STATE_DESCEND
+                        align_entered = False
+                        aligned_since_high = None
+
+                else:
+                    # Not aligned yet -> keep correcting
+                    aligned_since_high = None
+                    drone.send_body_velocity(cmd["vx"], cmd["vy"], cmd["vz"])
+                    print(
+                        f"[ALIGN] cmd: "
+                        f"vx={cmd['vx']:.2f}, vy={cmd['vy']:.2f}, vz={cmd['vz']:.2f}"
+                    )
+
+            else:
+                # No valid visual message -> stay conservative
+                aligned_since_high = None
+                drone.stop_motion()me.sleep(0.05)

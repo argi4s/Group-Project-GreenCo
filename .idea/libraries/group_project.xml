@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="group_project">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Group-Project-GreenCo-Test.zip!/" />
+      <root url="jar://$PROJECT_DIR$/FlyingDay1-End-of-day.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

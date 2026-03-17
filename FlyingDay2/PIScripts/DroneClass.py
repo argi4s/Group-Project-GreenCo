@@ -364,6 +364,40 @@ class Drone:
         print(f"[INFO] Speed set to {speed_m_s} m/s")
 
 
+    # body frame velocity base on coordinate system on drone
+    def send_body_velocity(self, vx, vy, vz):
+        """
+        Send body-frame velocity command using SET_POSITION_TARGET_LOCAL_NED.
+        BODY_NED convention:
+            vx > 0 : move forward
+            vy > 0 : move right
+            vz > 0 : move down
+        """
+        self._check_interrupts()
+
+        if self.mode != "GUIDED":
+            raise RuntimeError("Body velocity control requires GUIDED mode")
+
+        msg = self.mav.mav.set_position_target_local_ned_encode(
+            0,  # time_boot_ms
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_FRAME_BODY_NED,
+            0b0000111111000111,  # enable velocity only
+            0, 0, 0,             # x, y, z positions (ignored)
+            vx, vy, vz,          # body velocity
+            0, 0, 0,             # accelerations (ignored)
+            0, 0                 # yaw, yaw_rate (ignored)
+        )
+
+        self.mav.mav.send(msg)
+
+    def stop_motion(self):
+        """Convenience helper for stopping body motion."""
+        self.send_body_velocity(0.0, 0.0, 0.0)
+
+
+
     def move_to_wp(self, lon, lat, alt, speed=None, heading=None):  # CHANGED: added heading
         """Move to a specific waypoint using GUIDED mode.
            If speed is provided, sets groundspeed before moving.
