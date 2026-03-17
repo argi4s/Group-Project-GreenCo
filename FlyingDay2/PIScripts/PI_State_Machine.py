@@ -35,7 +35,7 @@ else:
         video_port=5800,
         vec_port=5801
     )
-=======
+
 camera = CameraStream(
     video_ip="192.168.1.17",  # Your PC IP
     video_port=5800,
@@ -43,7 +43,7 @@ camera = CameraStream(
     vec_local_ip="127.0.0.1",
     vec_port=5801
 )
->>>>>>> cd62866 (Update (aiming after detected)- framework and interfaces)
+
 
 # Hearing the vector to local
 vision = VisionReceiver(host="127.0.0.1", port=5801)
