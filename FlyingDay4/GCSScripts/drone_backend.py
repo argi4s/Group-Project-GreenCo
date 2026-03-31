@@ -30,8 +30,8 @@ class DroneBackend:
         self.LOCAL_IP = get_local_ip()
     
         # Pi addresses (destination for sending)
-        self.PI_FSM_ADDR = ("pop-os.local", 9050)      # Pi's FSM listener
-        self.PI_VEC_ADDR = ("pop-os.local", 5801)      # Pi's vector detection listener
+        self.PI_FSM_ADDR = ("kingfisher.local", 9050)      # Pi's FSM listener
+        self.PI_VEC_ADDR = ("kingfisher.local", 5801)      # Pi's vector detection listener
     
         # GCS listening ports (where we receive)
         self.GCS_FSM_PORT = 9051                        # Pi sends FSM messages here
@@ -50,7 +50,7 @@ class DroneBackend:
         self.VALID_EVENTS = [
             "init", "takeoff", "land", "emergency",
             "rtl", "lawn", "restart", "aoi",
-            "plb_upload", "plb_start", "return", "upl", "depl", "alt"  # Added aoi and return
+            "plb_upload", "plb_start", "return", "upl", "deploy", "alt"  # Added aoi and return
         ]
         
         # Callbacks
@@ -192,29 +192,30 @@ class DroneBackend:
                 msg_type = msg.get_type()
                 
                 if msg_type == "HEARTBEAT":
-                    # Get the raw mode value (0x00000004 = 4)
-                    mode_val = msg.custom_mode
-    
-                    # Simple lookup table for common ArduPilot modes
-                    mode_names = {
-                        0: "STABILIZE",
-                        1: "ACRO", 
-                        2: "ALT_HOLD",
-                        3: "AUTO",
-                        4: "GUIDED",      # 0x00000004 = GUIDED
-                        5: "LOITER",
-                        6: "RTL",
-                        7: "CIRCLE",
-                        9: "LAND",
-                        16: "POSHOLD"
-                    }
-    
-                    # Convert to readable name, or show raw value if unknown
-                    mode_str = mode_names.get(mode_val, f"Mode({mode_val})")
-    
-                    self.mav_telemetry["mode"] = mode_str
-                    self.mav_telemetry["armed"] = (msg.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED) != 0
-                    self.mav_telemetry["last_update"] = time.time()
+                    if msg.get_srcSystem() == 1 and msg.get_srcComponent() == 1:
+                        # Get the raw mode value (0x00000004 = 4)
+                        mode_val = msg.custom_mode
+        
+                        # Simple lookup table for common ArduPilot modes
+                        mode_names = {
+                            0: "STABILIZE",
+                            1: "ACRO", 
+                            2: "ALT_HOLD",
+                            3: "AUTO",
+                            4: "GUIDED",      # 0x00000004 = GUIDED
+                            5: "LOITER",
+                            6: "RTL",
+                            7: "CIRCLE",
+                            9: "LAND",
+                            16: "POSHOLD"
+                        }
+        
+                        # Convert to readable name, or show raw value if unknown
+                        mode_str = mode_names.get(mode_val, f"Mode({mode_val})")
+        
+                        self.mav_telemetry["mode"] = mode_str
+                        self.mav_telemetry["armed"] = (msg.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED) != 0
+                        self.mav_telemetry["last_update"] = time.time()
                     
                 elif msg_type == "GLOBAL_POSITION_INT":
                     self.mav_telemetry["lat"] = msg.lat / 1e7

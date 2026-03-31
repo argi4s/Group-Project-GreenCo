@@ -129,7 +129,10 @@ class DroneGUI:
 
         ttk.Button(btn_frame3, text="DEPLOY", command=lambda: self.send_cmd("deploy"), width=10).pack(side="left", padx=2)
         
+
         
+        tk.Button(btn_frame3, text="TEST SQUARE", command=lambda: self.send_cmd("test_square")).pack(side="left")
+
         # PLB Section
         row += 1
         plb_frame = ttk.LabelFrame(frame, text="PLB (Person Locator Beacon)", padding=5)
