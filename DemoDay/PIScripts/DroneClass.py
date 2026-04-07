@@ -1,0 +1,981 @@
+# Importable class for FSM integration
+# Handles MAVLink connection, telemetry, blocking flight commands, RTL and emergency interrupts
+
+from pymavlink import mavutil
+import threading
+import time
+import math
+from typing import Tuple, Optional
+
+LonLatAlt = Tuple[float, float, float]  # (lon, lat, alt_m) - CHANGED: lon first
+
+class Drone:
+    def __init__(self, mavlink_uri: str = "udp:127.0.0.1:14552"):
+        # MAVLink
+        self.mav = mavutil.mavlink_connection(mavlink_uri)
+        self.target_system = 1
+        self.target_component = 1
+
+        # Flight state / telemetry
+        self._armed = False
+        self._mode = ""
+        self._gps_fix = 0
+        self._lat = None
+        self._lon = None
+        self._alt = None
+        self._heading = None
+        self._ground_speed = None
+        self._air_speed = None
+        self._vz = None
+        self._roll = None
+        self._pitch = None
+        self._yaw = None
+        self._wp_index = None
+        self._payload_pos = 0
+
+        # Interrupt flags
+        self.emergency_flag = False
+        self.rtl_flag = False
+
+        # Internal
+        self.running = True
+        self.busy = False
+        self._lock = threading.Lock()
+        self._last_armed_state = False
+        self._loiter_triggered = False
+
+        self.mission_index = 0
+
+
+
+        self._alt_target = None
+        self._alt_rate = 1.0
+
+        threading.Thread(target=self._altitude_monitor_loop, daemon=True).start()
+        threading.Thread(target=self._telemetry_loop, daemon=True).start()
+
+        # Wait for heartbeat
+        print(f"[INFO] Connecting to MAVLink on {mavlink_uri}...")
+        self.mav.wait_heartbeat()
+        print("[INFO] Heartbeat received.")
+
+    # ----------------------------
+    # Telemetry updater
+    # ----------------------------
+    def _telemetry_loop(self):
+        while self.running:
+            try:
+                msg = self.mav.recv_match(blocking=False)
+                if msg is None:
+                    time.sleep(0.05)
+                    continue
+
+                with self._lock:
+                    if msg.get_type() == "HEARTBEAT":
+                        new_mode = mavutil.mode_string_v10(msg)
+                        new_armed = (msg.base_mode & mavutil.mavlink.MAV_MODE_FLAG_SAFETY_ARMED) != 0
+
+                        # Detect arm/disarm transitions
+                        if hasattr(self, "_last_armed_state"):
+                            if new_armed is False and self._last_armed_state is True:
+                                # Drone just disarmed → landing complete
+                                if hasattr(self, "fsm_callback"):
+                                    self.fsm_callback("LANDED")
+
+                        self._last_armed_state = new_armed
+                        self._mode = new_mode
+                        self._armed = new_armed
+
+                        if self._mode == "LOITER":
+                            if not self._loiter_triggered:
+                                self._loiter_triggered = True
+                                if hasattr(self, "fsm_callback"):
+                                    self.fsm_callback("RC_OVERRIDE")
+                        else:
+                            # Reset when leaving LOITER
+                            self._loiter_triggered = False
+
+
+                    elif msg.get_type() == "GLOBAL_POSITION_INT":
+                        self._lat = msg.lat / 1e7
+                        self._lon = msg.lon / 1e7
+                        self._alt = msg.relative_alt / 1000.0
+                        self._heading = msg.hdg / 100.0 if msg.hdg != 65535 else 0
+
+                    elif msg.get_type() == "NAV_CONTROLLER_OUTPUT":
+                        self._wp_index = msg.wp_dist  # approximate distance to WP
+
+                    elif msg.get_type() == "GPS_RAW_INT":
+                        self._gps_fix = msg.fix_type
+
+                    elif msg.get_type() == "VFR_HUD":
+                        self._air_speed = msg.airspeed
+                        self._ground_speed = msg.groundspeed
+                        self._vz = msg.climb  # vertical speed
+
+                    elif msg.get_type() == "ATTITUDE":
+                        self._roll = msg.roll
+                        self._pitch = msg.pitch
+                        self._yaw = msg.yaw
+
+                    elif msg.get_type() == "EXTENDED_SYS_STATE":
+                        ls = msg.landed_state
+
+                    # inside the MAVLink receive loop in DroneClass
+                    elif msg.get_type() == "MISSION_CURRENT":
+                        self.mission_index = msg.seq
+
+
+
+
+                        # 1 = ON_GROUND
+                        # 2 = IN_AIR
+                        # 3 = TAKEOFF
+                        # 4 = LANDING
+
+                        if hasattr(self, "fsm_callback"):
+                            if ls == 3:
+                                self.fsm_callback("TAKEOFF_STARTED")
+                            elif ls == 2:
+                                self.fsm_callback("TAKEOFF_COMPLETE")
+                            elif ls == 4:
+                                self.fsm_callback("LANDING")
+                            elif ls == 1:
+                                self.fsm_callback("LANDED")
+
+
+
+#                    if getattr(self, "takeoff_in_progress", False):
+#                        if (
+#                            self._alt is not None and
+#                            self.takeoff_target is not None and
+#                            self._alt >= self.takeoff_target - 0.5
+#                        ):
+#                            print("[INFO] Takeoff complete")
+#                            self.takeoff_in_progress = False
+#                            if hasattr(self, "fsm_callback"):
+#                                self.fsm_callback("TAKEOFF_COMPLETE")
+
+            except Exception:
+                continue
+
+            if self._armed == False and self._last_armed_state == True:
+                self.fsm_callback("LANDED")
+            self._last_armed_state = self._armed
+
+
+            #time.sleep(0.05)
+
+    # ----------------------------
+    # Properties
+    # ----------------------------
+    @property
+    def armed(self):
+        with self._lock:
+            return self._armed
+
+    @property
+    def mode(self):
+        with self._lock:
+            return self._mode
+
+    @property
+    def gps_fix(self):
+        with self._lock:
+            return self._gps_fix
+
+    @property
+    def position(self):
+        with self._lock:
+            return (self._lon, self._lat, self._alt)
+
+    @property
+    def heading(self):
+        with self._lock:
+            return self._heading
+
+    @property
+    def ground_speed(self):
+        with self._lock:
+            return self._ground_speed
+
+    @property
+    def air_speed(self):
+        with self._lock:
+            return self._air_speed
+
+    @property
+    def vertical_speed(self):
+        with self._lock:
+            return self._vz
+
+
+
+    # ----------------------------
+    # Flight Control
+    # ----------------------------
+    def set_mode(self, mode: str):
+        """Set the drone mode."""
+        if mode not in ["GUIDED", "AUTO"]:
+            raise ValueError("This mode is not supported")
+
+        self.mav.set_mode(mode)
+        time.sleep(0.2)
+        print(f"[INFO] Set mode to {mode}")
+
+    def set_param(self, name: str, value: float):
+        """
+        Set an ArduPilot parameter using MAV_CMD_PARAM_SET.
+        """
+        self.mav.mav.param_set_send(
+            self.target_system,
+            self.target_component,
+            name.encode('utf-8'),
+            float(value),
+            mavutil.mavlink.MAV_PARAM_TYPE_REAL32
+        )
+        print(f"[INFO] Set parameter {name} = {value}")
+
+
+    def arm(self):
+        self._check_interrupts()
+        self.busy = True
+
+        self.mav.mav.command_long_send(
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,
+            0,
+            1, 0, 0, 0, 0, 0, 0)
+        self.busy = False
+
+    def disarm(self):
+        self._check_interrupts()
+        self.busy = True
+
+        self.mav.mav.command_long_send(
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,
+            0,
+            0, 0, 0, 0, 0, 0, 0
+        )
+
+    def start_takeoff_async(self, target_alt):
+        self.busy = True
+        self.takeoff_target = target_alt
+        self.takeoff_in_progress = True
+
+        self.mav.mav.command_long_send(
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_CMD_NAV_TAKEOFF,
+            0,
+            0,0,0,0,0,0,
+            target_alt
+        )
+        self.busy = False
+
+
+    def takeoff(self, target_altitude_m: float):
+        """Take off to a given altitude."""
+        self._check_interrupts()
+
+        if self.mode != "GUIDED":
+            raise RuntimeError("Takeoff requires GUIDED mode")
+
+        self.busy = True
+
+        self.mav.mav.command_long_send(
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_CMD_NAV_TAKEOFF,
+            0,
+            0, 0, 0, 0, 0, 0,
+            target_altitude_m
+        )
+
+        #self._wait_until_altitude(target_altitude_m)
+        self.busy = False
+
+    def land(self):
+        """Land the drone."""
+        self._check_interrupts()
+
+        self.busy = True
+
+        self.mav.mav.command_long_send(
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_CMD_NAV_LAND,
+            0,
+            0, 0, 0, 0, 0, 0, 0
+        )
+
+        #self._wait_until_altitude(0.3)
+        self.busy = False
+
+    def landed(self) -> bool:
+        """Check if drone is landed (altitude low and disarmed)."""
+        with self._lock:
+            return (self._alt is not None and
+                    self._alt < 0.5 and
+                    not self._armed)
+
+    def descend_straight_down(self, descent_rate_ms: float = 1.0):
+        """
+        Uses velocity control (type_mask = 0b110111000111 = 0x0DC7)
+        descent_rate_ms: Descent speed in m/s (positive = down)
+        """
+        self._check_interrupts()
+
+        self.busy = True
+        self.rtl_flag = True
+
+
+        self._vel_type_mask = 0x0DC7
+
+        self.mav.mav.set_position_target_local_ned_send(
+            0,  # time_boot_ms (0 = immediately)
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_FRAME_LOCAL_NED,  # NED frame: X=North, Y=East, Z=Down
+            self._vel_type_mask,
+            0, 0, 0,  # positions (ignored)
+            0, 0, descent_rate_ms,  # vx=0, vy=0, vz=descent_rate (positive = down)
+            0, 0, 0,  # accelerations (ignored)
+            0,  # yaw (ignored)
+            0   # yaw_rate (ignored)
+        )
+
+        print(f"[INFO] Descending straight down at {descent_rate_ms} m/s")
+
+    def descend_to_altitude(self, target_alt: float, descent_rate: float = 1.0):
+        """
+        Descend straight down at specified speed until reaching target altitude.
+
+        TODO ADD TIMEOUT PROTECTION
+        """
+        self._check_interrupts()
+
+        self.busy = True
+        self.rtl_flag = True
+
+        while True:
+            # Start descending at the specified rate
+            self.descend_straight_down(descent_rate)
+
+            # Check if reached altitude
+            _, _, alt = self.position
+            if alt is not None and abs(alt - target_alt) <= 0.3:
+                break
+
+            time.sleep(0.1)  # <-- Sleep AFTER check, before next command
+
+        # Stop descending
+        self.stop_in_place()
+
+        self.busy = False
+        print(f"[INFO] Reached target altitude: {target_alt}m")
+
+    def auto_set_altitude(self, target_alt_m: float):
+        """
+        Uses AUTO mode + LOITER mission command to ascend/descend
+        and hold position automatically at the target altitude.
+
+        This avoids velocity streaming and GUIDED micro-control.
+        """
+
+        # Must be in AUTO for NAV_LOITER commands
+        self.set_mode("AUTO")
+        time.sleep(0.3)
+
+        # Build a single-item mission
+        lat, lon, _ = self.position[1], self.position[0], self.position[2]
+
+        # Clear mission
+        self.mav.mav.mission_clear_all_send(self.target_system, self.target_component)
+        time.sleep(0.2)
+
+        # Tell AP we will upload 1 item
+        self.mav.mav.mission_count_send(self.target_system, self.target_component, 1)
+
+        # Wait for request
+        req = self.mav.recv_match(type=['MISSION_REQUEST_INT', 'MISSION_REQUEST'], blocking=True, timeout=3)
+        if not req:
+            print("[ERROR] No mission request from autopilot")
+            return
+
+        # Send LOITER_UNLIM at target altitude
+        self.mav.mav.mission_item_int_send(
+            self.target_system,
+            self.target_component,
+            0,  # seq
+            mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT,
+            mavutil.mavlink.MAV_CMD_NAV_LOITER_UNLIM,
+            1,  # current
+            1,  # autocontinue
+            0, 0, 0, 0,  # params unused
+            int(lat * 1e7),
+            int(lon * 1e7),
+            target_alt_m,
+            0
+        )
+
+        print(f"[INFO] AUTO loiter to {target_alt_m}m uploaded")
+
+        # Switch to AUTO to execute
+        self.set_mode("AUTO")
+        print("[INFO] Executing AUTO loiter ascent/descent")
+
+
+    def stop_in_place(self):
+        """Stop and hold position"""
+        # FIXED: Check if type_mask exists, use default if not
+        type_mask = getattr(self, '_vel_type_mask', 0x0DC7)
+
+        self.mav.mav.set_position_target_local_ned_send(
+            0,
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_FRAME_LOCAL_NED,
+            type_mask,
+            0, 0, 0,
+            0, 0, 0,  # zero velocity
+            0, 0, 0,
+            0, 0
+        )
+        print("[INFO] Drone stopped in place")
+
+    def rtl(self):
+        """Return to launch (RTL)."""
+
+
+        self.busy = True
+        self.rtl_flag = True
+
+        self.mav.mav.command_long_send(
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_CMD_NAV_RETURN_TO_LAUNCH,
+            0,
+            0, 0, 0, 0, 0, 0, 0
+        )
+
+        # Wait for RTL to complete
+        while True:
+            self._check_interrupts()
+            lon, lat, alt = self.position  # CHANGED: lon first
+
+            if alt is not None and alt < 0.3 and not self.armed:
+                break
+
+            time.sleep(0.5)
+
+        # Clear the RTL flag AFTER successfully completing
+        with self._lock:
+            self.rtl_flag = False
+
+        self.busy = False
+        print("[INFO] RTL completed, flag cleared")
+
+    def emergency(self):
+        print("[EMERGENCY] FORCING MOTOR KILL")
+
+        for _ in range(2):
+            self.mav.mav.command_long_send(
+                self.target_system,
+                self.target_component,
+                mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,
+                1,      # force
+                0,      # disarm
+                211,    # override
+                0, 0, 0, 0, 0
+            )
+            time.sleep(0.05)
+
+
+    def set_speed(self, speed_m_s):
+        """Set ground speed in meters per second."""
+        self.mav.mav.command_long_send(
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_CMD_DO_CHANGE_SPEED,
+            0,
+            1,  # Speed type (1 = groundspeed)
+            speed_m_s,  # Speed value
+            -1,  # Throttle (no change)
+            0, 0, 0, 0, 0
+        )
+        time.sleep(0.1)
+        print(f"[INFO] Speed set to {speed_m_s} m/s")
+
+    def move_to_wp(self, lon, lat, alt, speed=None, heading=None):  # CHANGED: added heading
+        """Move to a specific waypoint using GUIDED mode.
+           If speed is provided, sets groundspeed before moving.
+           If heading is provided, maintains that heading during movement.
+        """
+        self._check_interrupts()
+
+        if self.mode != "GUIDED":
+            raise RuntimeError("Waypoint navigation requires GUIDED mode")
+
+        self.busy = True
+
+        # Set speed if provided
+        if speed is not None:
+            self.set_speed(speed)
+
+        while True:
+            self._check_interrupts()
+
+            # Pass heading to position target
+            self.send_position_target(lon, lat, alt, heading)  # CHANGED: pass heading
+
+            # Use the public distance_to method with (lon, lat) order
+            dist = self.distance_to(lon, lat)  # CHANGED: lon first
+            _, _, current_alt = self.position
+
+            if dist < 2 and current_alt is not None and abs(current_alt - alt) < 1:
+                break
+
+            time.sleep(0.2)
+
+        self.busy = False
+
+    def move_to_wp_queue(self, waypoint_generator):
+        """Move through a queue of waypoints fetched one at a time from the generator."""
+        self._check_interrupts()
+
+        # Process waypoints one at a time
+        for i, wp in waypoint_generator():
+            lon, lat, alt = wp  # CHANGED: lon first
+            self._check_interrupts()
+            print(f"Moving to waypoint {i+1} -> ({lon:.7f},{lat:.7f},{alt:.2f}m)")  # CHANGED: lon first
+
+
+            # Move to the current waypoint
+            self.move_to_wp(lon, lat, alt)  # CHANGED: lon first
+
+        print("All waypoints have been completed.")
+
+    def upload_mission(self, waypoints):
+
+        print(f"[INFO] Uploading {len(waypoints)} waypoints...")
+
+        # --- FIX: Prevent ArduPilot from skipping waypoint 0 ---
+        if len(waypoints) > 0:
+            lon0, lat0, alt0 = waypoints[0]
+            dummy_lon = lon0 + 0.00005   # ~5m east
+            dummy_lat = lat0             # same latitude
+            waypoints = [(dummy_lon, dummy_lat, alt0)] + waypoints
+            print("[INFO] Added dummy WP0 to prevent skip")
+
+        # Force MAVLink2 (prevents fallback to MISSION_ITEM)
+        try:
+            self.mav.mav.set_protocol_version(2)
+        except:
+            pass
+
+        # Clear mission
+        self.mav.mav.mission_clear_all_send(
+            self.target_system,
+            self.target_component,
+            0
+        )
+        time.sleep(0.3)
+
+        # Tell AP how many items
+        self.mav.mav.mission_count_send(
+            self.target_system,
+            self.target_component,
+            len(waypoints),
+            0
+        )
+
+        # Upload loop
+        uploaded = 0
+        while uploaded < len(waypoints):
+
+            # Wait for AP request
+            req = self.mav.recv_match(
+                type=['MISSION_REQUEST_INT', 'MISSION_REQUEST'],
+                blocking=True,
+                timeout=5
+            )
+
+            if not req:
+                print(f"[ERROR] Timeout waiting for request {uploaded}")
+                return
+
+            seq = req.seq
+            print(f"[REQ] {req.get_type()} seq={seq}")
+
+            lon, lat, alt = waypoints[seq]
+
+            # Convert to INT format
+            lat_i = int(lat * 1e7)
+            lon_i = int(lon * 1e7)
+
+            current_flag = 1 if seq == 0 else 0
+
+            # ALWAYS send INT version — even if AP requested non‑INT
+            print(f"[SEND] mission_item_int seq={seq}")
+            self.mav.mav.mission_item_int_send(
+                self.target_system,
+                self.target_component,
+                seq,
+                mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT,
+                mavutil.mavlink.MAV_CMD_NAV_WAYPOINT,
+                current_flag,
+                1,      # autocontinue
+                0, 0, 0, 0,
+                lat_i,
+                lon_i,
+                float(alt),
+                0       # mission_type = 0
+            )
+
+            uploaded += 1
+
+        # Final ACK
+        ack = self.mav.recv_match(
+            type='MISSION_ACK',
+            blocking=True,
+            timeout=10
+        )
+
+        if ack:
+            print(f"[INFO] Mission result: {ack.type}")
+        else:
+            print("[ERROR] No final MISSION_ACK")
+
+        print("[INFO] Mission upload complete.")
+
+
+    def upload_geofence(self, fence_points):
+        """
+        Upload a polygon geofence to ArduPilot.
+        fence_points = [(lon, lat), (lon, lat), ...]
+        """
+
+        count = len(fence_points)
+        print(f"[INFO] Uploading geofence with {count} points")
+
+        # 1. Tell ArduPilot how many points
+        self.mav.mav.fence_total_send(
+            self.target_system,
+            self.target_component,
+            count
+        )
+
+        time.sleep(0.2)
+
+        # 2. Send each point
+        for i, (lon, lat) in enumerate(fence_points):
+            self.mav.mav.fence_point_send(
+                self.target_system,
+                self.target_component,
+                i,          # index
+                lat,        # latitude
+                lon,        # longitude
+                0           # altitude (ignored)
+            )
+            time.sleep(0.1)
+
+        print("[INFO] Geofence upload complete.")
+
+    def set_mission_index(self, index):
+        self.mav.mav.mission_set_current_send(
+            self.target_system,
+            self.target_component,
+            index,
+        )
+
+
+    def send_position_target(self, lon, lat, alt, heading=None):  # CHANGED: added heading
+        """Send position target to move the drone with optional fixed heading."""
+
+        # Set up position target flags
+        if heading is not None:
+            # Position + yaw (ignore velocity, acceleration, yaw rate)
+            type_mask = 0b0000110000111000  # Position + yaw
+        else:
+            # Position only, no yaw control
+            type_mask = 0b0000111111111000  # Position only
+
+        # Send the position target
+        self.mav.mav.set_position_target_global_int_send(
+            0,
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT,
+            type_mask,
+            int(lat * 1e7),
+            int(lon * 1e7),
+            alt,
+            0, 0, 0,  # velocities
+            0, 0, 0,  # accelerations
+            heading if heading is not None else 0,  # yaw
+            0  # yaw rate
+        )
+
+        # Small delay to allow processing
+        time.sleep(0.1)
+
+        # Request the current target from autopilot
+        self.mav.mav.command_long_send(
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_CMD_REQUEST_MESSAGE,
+            0,
+            mavutil.mavlink.MAVLINK_MSG_ID_POSITION_TARGET_GLOBAL_INT,
+            0, 0, 0, 0, 0, 0
+        )
+
+        # Listen for response
+        msg = self.mav.recv_match(type='POSITION_TARGET_GLOBAL_INT', blocking=True, timeout=2)
+
+        # Write to debug file
+        with open("waypoint_debug.txt", "a") as f:
+            f.write(f"\n--- Position Target Debug ---\n")
+            f.write(f"Command sent to: ({lon:.7f}, {lat:.7f}, {alt:.2f})\n")
+            f.write(f"Heading: {heading if heading is not None else 'AUTO'}\n")
+            f.write(f"Sent as ints: lon={int(lon*1e7)}, lat={int(lat*1e7)}\n")
+
+            if msg:
+                ap_lon = msg.lon_int / 1e7
+                ap_lat = msg.lat_int / 1e7
+                ap_alt = msg.alt
+                f.write(f"Autopilot target: ({ap_lon:.7f}, {ap_lat:.7f}, {ap_alt:.2f})\n")
+
+                # Calculate difference
+                lon_diff = abs(lon - ap_lon) * 111320 * math.cos(math.radians(lat))
+                lat_diff = abs(lat - ap_lat) * 111320
+                total_diff = math.sqrt(lon_diff**2 + lat_diff**2)
+                f.write(f"Difference: {lon_diff:.2f}m E/W, {lat_diff:.2f}m N/S, {total_diff:.2f}m total\n")
+
+                if abs(lon - ap_lon) > 0.0001 or abs(lat - ap_lat) > 0.0001:
+                    f.write(f"MISMATCH DETECTED Coordinates differ\n")
+            else:
+                f.write(f"No POSITION_TARGET_GLOBAL_INT response from autopilot\n")
+
+            f.write(f"--- End Debug ---\n\n")
+
+        return msg
+
+    def set_servo_pwm(self, servo_num, pwm_value):
+        """
+        Sets a specific servo to a PWM value.
+        servo_num: 1-16 (depending on flight controller capabilities)
+        pwm_value: 1000-2000
+        """
+        self.mav.command_long_send(
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_CMD_DO_SET_SERVO,
+            0,            # Confirmation
+            servo_num,    # Servo Number
+            pwm_value,    # PWM value
+            0, 0, 0, 0, 0 # Unused parameters
+        )
+        print(f"Set Servo {servo_num} to {pwm_value}")
+
+    def distance_to(self, lon, lat):  # CHANGED: lon first
+        """Public wrapper for _distance_to - expects (lon, lat) order."""
+        return self._distance_to(lon, lat)
+
+    def _distance_to(self, lon, lat):  # CHANGED: lon first
+        """Calculate distance to target using Haversine formula (accurate)."""
+        current_lon, current_lat, _ = self.position  # CHANGED: lon first from position
+
+        if current_lat is None or current_lon is None:
+            return float("inf")
+
+        # Convert to radians
+        lat1 = math.radians(current_lat)
+        lon1 = math.radians(current_lon)
+        lat2 = math.radians(lat)
+        lon2 = math.radians(lon)
+
+        # Haversine formula
+        dlat = lat2 - lat1
+        dlon = lon2 - lon1
+        a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
+        c = 2 * math.asin(math.sqrt(a))
+        R = 6371000  # Earth's radius in meters
+
+        distance = R * c
+
+        # Debug
+        with open("waypoint_debug.txt", "a") as f:
+            f.write(f"distance_to: current=({current_lon:.7f},{current_lat:.7f}) ")  # CHANGED: lon first
+            f.write(f"target=({lon:.7f},{lat:.7f}) ")  # CHANGED: lon first
+            f.write(f"dist={distance:.2f}m\n")
+
+        return distance
+
+    def _wait_until_altitude(self, target_alt: float, tolerance: float = 0.5):
+        """Wait until the drone reaches a target altitude."""
+        while True:
+            self._check_interrupts()
+
+            _, _, alt = self.position
+            if alt is not None and abs(alt - target_alt) <= tolerance:
+                return True
+
+            time.sleep(0.1)
+
+    def _altitude_monitor_loop(self):
+        """
+        Continuously streams vertical velocity commands until the target
+        altitude is reached. Prevents ArduPilot's 3‑second timeout.
+        """
+        while True:
+            try:
+                # No altitude change requested
+                if self._alt_target is None:
+                    time.sleep(0.05)
+                    continue
+
+                lon, lat, alt = self.position
+                if alt is None:
+                    time.sleep(0.05)
+                    continue
+
+                # Check if target reached
+                if abs(alt - self._alt_target) < 0.3:
+                    self.stop_in_place()
+                    print(f"[INFO] Altitude reached {self._alt_target}m")
+                    self._alt_target = None
+                    continue
+
+
+                if self._alt_target > alt:
+                    vz = -abs(self._alt_rate)    # up
+                else:
+                    vz = abs(self._alt_rate)   # down
+
+
+                # Velocity-only mask
+                type_mask = 0b0000111111000111
+
+                # Stream the command (10 Hz)
+                self.mav.mav.set_position_target_global_int_send(
+                    0,
+                    self.target_system,
+                    self.target_component,
+                    mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT_INT,
+                    0b0000111111000111,   # velocity only
+                    int(lat * 1e7),
+                    int(lon * 1e7),
+                    0,                    # alt ignored in velocity mode
+                    0, 0, vz,             # vz in GLOBAL frame: +up, -down
+                    0, 0, 0,
+                    0, 0
+                )
+
+
+            except Exception:
+                pass
+
+            time.sleep(0.1)  # 10 Hz
+
+
+    def change_altitude(self, new_alt, rate=0.3):
+        """
+        Non-blocking altitude change.
+        Moves vertically using velocity control and automatically stops
+        when the target altitude is reached.
+        """
+        self._check_interrupts()
+
+        if self.mode != "GUIDED":
+            raise RuntimeError("Altitude change requires GUIDED mode")
+
+        _, _, current_alt = self.position
+        if current_alt is None:
+            print("[WARN] No altitude data available")
+            return
+
+        # NED frame: vz > 0 = down, vz < 0 = up
+        if new_alt > current_alt:
+            vz = -abs(rate)   # climb
+        else:
+            vz = abs(rate)    # descend
+
+        # Velocity-only mask
+        type_mask = 3704
+
+
+        self.mav.mav.set_position_target_local_ned_send(
+            0,
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_FRAME_LOCAL_NED,
+            type_mask,
+            0, 0, 0,        # position ignored
+            0, 0, vz,       # vertical velocity only
+            0, 0, 0,        # accel ignored
+            0, 0            # yaw ignored
+        )
+
+        self._alt_target = new_alt
+        print(f"[INFO] Changing altitude to {new_alt}m at {rate} m/s (async)")
+
+
+    def _distance_m(self, a: LonLatAlt, b: LonLatAlt) -> float:  # CHANGED: LonLatAlt type
+        from math import radians, cos, sqrt
+        R = 6371000.0
+
+        lon1, lat1, _ = a  # CHANGED: lon first
+        lon2, lat2, _ = b  # CHANGED: lon first
+
+        dlat = radians(lat2 - lat1)
+        dlon = radians(lon2 - lon1)
+
+        lat1r = radians(lat1)
+        lat2r = radians(lat2)
+
+        x = dlon * cos((lat1r + lat2r) / 2.0)
+        y = dlat
+
+        return R * sqrt(x*x + y*y)
+
+    def _check_interrupts(self):
+        print("test")
+        #if self.emergency_flag:
+
+            #raise RuntimeError("Emergency active: command blocked")
+
+        #if self.rtl_flag:
+            #raise RuntimeError("RTL active: command blocked")
+
+    def send_body_velocity(self, vx, vy, vz):
+        """
+        Send body-frame velocity command using SET_POSITION_TARGET_LOCAL_NED.
+        BODY_NED convention:
+            vx > 0 : forward
+            vy > 0 : right
+            vz > 0 : down
+        """
+        self._check_interrupts()
+
+        if self.mode != "GUIDED":
+            raise RuntimeError("Body velocity control requires GUIDED mode")
+
+        self.mav.mav.set_position_target_local_ned_send(
+            0,
+            self.target_system,
+            self.target_component,
+            mavutil.mavlink.MAV_FRAME_BODY_NED,
+            0b0000111111000111,  # velocity only
+            0, 0, 0,             # positions ignored
+            vx, vy, vz,          # body-frame velocity
+            0, 0, 0,             # accelerations ignored
+            0, 0                 # yaw, yaw_rate ignored
+        )
+
+    def stop(self):
+        """Stop the drone and cleanup."""
+        self.running = False
