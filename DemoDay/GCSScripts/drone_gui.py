@@ -143,7 +143,7 @@ class DroneGUI:
         self.plb_file_label = ttk.Label(file_row, text="No file selected", width=30)
         self.plb_file_label.pack(side="left", padx=2)
 
-        ttk.Button(file_row, text="Browse CSV", command=self.browse_plb_file, width=12).pack(side="left", padx=2)
+        ttk.Button(file_row, text="Browse KML", command=self.browse_plb_file, width=12).pack(side="left", padx=2)
 
         # Waypoint count and actions row
         action_row = ttk.Frame(plb_frame)
@@ -438,7 +438,7 @@ class DroneGUI:
     def browse_plb_file(self):
         """Open file browser to select KML file"""
         filename = filedialog.askopenfilename(
-            title="Select PLB Coordinates CSV",
+            title="Select PLB Coordinates KML",
             filetypes=[("KML files", "*.kml"), ("Text files", "*.txt"), ("All files", "*.*")]
         )
 
