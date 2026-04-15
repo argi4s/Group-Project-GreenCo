@@ -106,8 +106,9 @@ class DroneGUI:
 
         ttk.Button(btn_frame1, text="INIT", command=lambda: self.send_cmd("init"), width=10).pack(side="left", padx=2)
         ttk.Button(btn_frame1, text="TAKEOFF", command=self.takeoff_dialog, width=10).pack(side="left", padx=2)
+        ttk.Button(btn_frame1, text="AOI", command=lambda: self.send_cmd("aoi"), width=10).pack(side="left", padx=2)        # AOI - Area of Interest
         ttk.Button(btn_frame1, text="LAND", command=lambda: self.send_cmd("land"), width=10).pack(side="left", padx=2)
-        ttk.Button(btn_frame1, text="CAMTEST", command=lambda: self.send_cmd("camera"), width=10).pack(side="left", padx=2) # Button for dummy camera detections, to force state changes
+        #ttk.Button(btn_frame1, text="CAMTEST", command=lambda: self.send_cmd("camera"), width=10).pack(side="left", padx=2) # Button for dummy camera detections, to force state changes
 
         row += 1
         btn_frame2 = ttk.Frame(frame)
@@ -115,7 +116,6 @@ class DroneGUI:
 
 
         ttk.Button(btn_frame2, text="LAWN", command=lambda: self.send_cmd("lawn"), width=10).pack(side="left", padx=2)
-        ttk.Button(btn_frame2, text="AOI", command=lambda: self.send_cmd("aoi"), width=10).pack(side="left", padx=2)        # AOI - Area of Interest
         ttk.Button(btn_frame2, text="RETURN", command=lambda: self.send_cmd("return"), width=10).pack(side="left", padx=2)
         ttk.Button(btn_frame2, text="ALT", command=self.alt_dialog, width=10).pack(side="left", padx=2)                     # Altitude
 
@@ -125,7 +125,7 @@ class DroneGUI:
 
         ttk.Button(btn_frame3, text="RESTART", command=lambda: self.send_cmd("restart"), width=10).pack(side="left", padx=2)
 
-        ttk.Button(btn_frame3, text="DEPLOY", command=lambda: self.send_cmd("deploy"), width=10).pack(side="left", padx=2)
+        #ttk.Button(btn_frame3, text="DEPLOY", command=lambda: self.send_cmd("deploy"), width=10).pack(side="left", padx=2)
 
 
 
@@ -265,8 +265,8 @@ class DroneGUI:
         ttk.Label(frame, textvariable=self.detection_score_var).grid(row=11, column=0, columnspan=2, pady=2)
 
         # Deploy button under detection
-        deploy_btn = ttk.Button(frame, text="DEPLOY", command=lambda: self.send_cmd("deploy"))
-        deploy_btn.grid(row=12, column=0, columnspan=2, pady=5)
+        #deploy_btn = ttk.Button(frame, text="DEPLOY", command=lambda: self.send_cmd("deploy"))
+        #deploy_btn.grid(row=12, column=0, columnspan=2, pady=5)
 
 
     def create_video_panel(self):

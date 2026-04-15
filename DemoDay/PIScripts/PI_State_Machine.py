@@ -10,10 +10,7 @@ import os
 import atexit
 from vision_receiver import VisionReceiver
 
-
-
 from lawnmower import plan_lawnmower, CameraFootprintRef, Waypoint
-
 
 # -------------------------
 # INITIALISE CAMERA
